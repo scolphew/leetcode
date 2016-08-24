@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <root>
 <question>
-	<name>数组排序</name>
-	<condition>使用最少的交换次数</condition>>
+	<name>鏁扮粍鎺掑簭</name>
+	<condition>浣跨敤链€灏戠殑浜ゆ崲娆℃暟</condition>>
 </question>
 <question>
-	<name>链表问题</name>
-	<method>快慢指针</method>
+	<name>阈捐〃闂</name>
+	<method>蹇参鎸囬拡</method>
 </question>
 <question>
-	<name>反向问题</name>
-	<tool>栈</tool>>
+	<name>鍙嶅悜闂</name>
+	<tool>镙?/tool>>
 </question>
 <question>
-	<name>五子棋</name>
-	<method>博弈树</method>>>
+	<name>浜斿瓙妫?/name>
+	<method>鍗氩纸镙?/method>>>
 </question>
 </root>

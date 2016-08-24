@@ -1,4 +1,4 @@
-package lsf._067_addBinary;
+﻿package lsf._067_addBinary;
 
 import java.util.Random;
 
@@ -22,12 +22,12 @@ public class Solution {
         Solution s = new Solution();
         System.out.println(s.addBinary("11", "11"));
 //		
-//		String s1=s.锟斤拷锟斤拷锟�);
-//		String s2=s.锟斤拷锟斤拷锟�);
+//		String s1=s.阌熸枻鎷烽敓鏂ゆ嫹阌燂拷);
+//		String s2=s.阌熸枻鎷烽敓鏂ゆ嫹阌燂拷);
 //		System.out.println("a="+s1);
 //		System.out.println("b="+s2);
 //		int n=new Random().nextInt(9999999);
-//		System.out.println("锟斤拷锟斤拷"+n+"锟介：");
+//		System.out.println("阌熸枻鎷烽敓鏂ゆ嫹"+n+"阌熶粙锛?);
 //		
 //		
 //		Long time1= new Date().getTime();
@@ -36,7 +36,7 @@ public class Solution {
 //			s.addBinary(s1, s2);
 //		}
 //		Long time2= new Date().getTime();
-//		System.out.println("+=锟斤拷锟斤拷时锟斤拷");
+//		System.out.println("+=阌熸枻鎷烽敓鏂ゆ嫹镞堕敓鏂ゆ嫹");
 //		System.out.println(time2-time1);
 //		Long time3= new Date().getTime();
 //		for (int i = 0; i < n; i++) {
@@ -44,27 +44,27 @@ public class Solution {
 //			s.addBinary2(s1, s2);
 //		}
 //		Long time4= new Date().getTime();
-//		System.out.println("StringBuffer锟斤拷锟斤拷时锟斤拷");
+//		System.out.println("StringBuffer阌熸枻鎷烽敓鏂ゆ嫹镞堕敓鏂ゆ嫹");
 //		System.out.println(time4-time3);
     }
 
     /*
     Given two binary strings, return their sum (also a binary string).
-    锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟街凤拷锟斤拷锟斤拷锟斤拷锟角碉拷锟杰和ｏ拷也锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟街凤拷锟斤拷
+    阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熻鍑ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓瑙掔鎷烽敓鏉板拰锝忔嫹涔熼敓鏂ゆ嫹涓€阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熻鍑ゆ嫹阌熸枻鎷?
     For example,
     a = "11"
     b = "1"
     Return "100".
     */
     public String addBinary(String a, String b) {
-        //锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷0  直锟斤拷锟斤拷锟�
+        //阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷?  鐩撮敓鏂ゆ嫹阌熸枻鎷烽敓锟?
         if (a.equals("0") && b.equals("0"))
             return "0";
         int a_len = a.length(), b_len = b.length();
-        int len = a_len > b_len ? (a_len + 1) : (b_len + 1);//锟斤拷知之锟襟长讹拷锟筋长为 a锟斤拷b锟较筹拷锟侥筹拷锟斤拷+1
-        int flag = 0;//锟斤拷位锟斤拷锟�
-        int x1 = a_len - 1, x2 = b_len - 1;//a/b锟斤拷涌锟斤拷锟街革拷锟�
-        int c[] = new int[len];//锟斤拷哟锟斤拷锟斤拷锟斤拷锟斤拷
+        int len = a_len > b_len ? (a_len + 1) : (b_len + 1);//阌熸枻鎷风煡涔嬮敓瑗熼昵璁规嫹阌熺璎闀夸负 a阌熸枻鎷穊阌熻缉绛规嫹阌熶茎绛规嫹阌熸枻鎷?1
+        int flag = 0;//阌熸枻鎷蜂綅阌熸枻鎷烽敓锟?
+        int x1 = a_len - 1, x2 = b_len - 1;//a/b阌熸枻鎷锋秾阌熸枻鎷烽敓琛楅潻鎷烽敓锟?
+        int c[] = new int[len];//阌熸枻鎷峰摕阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹
         for (int i = len - 1; i >= 0; --x1, --x2, --i) {
             int sum = flag;
             if (x1 >= 0) {
@@ -97,7 +97,7 @@ public class Solution {
         flag = 0;
         //System.out.println(c.length);
         /**
-         * 去锟斤拷锟斤拷锟斤拷锟斤拷前锟斤拷募锟斤拷锟�
+         * 铡婚敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷峰墠阌熸枻鎷峰嫙阌熸枻鎷烽敓锟?
          *
          */
         while (flag < c.length && c[flag] == 0) {
@@ -105,7 +105,7 @@ public class Solution {
             flag++;
         }
         /**
-         * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷str
+         * 阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹str
          */
         for (int i = flag; i < c.length; i++) {
             str += c[i];
@@ -120,14 +120,14 @@ public class Solution {
     }
 
     public String addBinary2(String a, String b) {
-        //锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷0  直锟斤拷锟斤拷锟�
+        //阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷?  鐩撮敓鏂ゆ嫹阌熸枻鎷烽敓锟?
         if (a.equals("0") && b.equals("0"))
             return "0";
         int a_len = a.length(), b_len = b.length();
-        int len = a_len > b_len ? (a_len + 1) : (b_len + 1);//锟斤拷知之锟襟长讹拷锟筋长为 a锟斤拷b锟较筹拷锟侥筹拷锟斤拷+1
-        int flag = 0;//锟斤拷位锟斤拷锟�
-        int x1 = a_len - 1, x2 = b_len - 1;//a/b锟斤拷涌锟斤拷锟街革拷锟�
-        int c[] = new int[len];//锟斤拷哟锟斤拷锟斤拷锟斤拷锟斤拷
+        int len = a_len > b_len ? (a_len + 1) : (b_len + 1);//阌熸枻鎷风煡涔嬮敓瑗熼昵璁规嫹阌熺璎闀夸负 a阌熸枻鎷穊阌熻缉绛规嫹阌熶茎绛规嫹阌熸枻鎷?1
+        int flag = 0;//阌熸枻鎷蜂綅阌熸枻鎷烽敓锟?
+        int x1 = a_len - 1, x2 = b_len - 1;//a/b阌熸枻鎷锋秾阌熸枻鎷烽敓琛楅潻鎷烽敓锟?
+        int c[] = new int[len];//阌熸枻鎷峰摕阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹
         for (int i = len - 1; i >= 0; --x1, --x2, --i) {
             int sum = flag;
             if (x1 >= 0) sum += (a.charAt(x1) - 48);
@@ -157,7 +157,7 @@ public class Solution {
         flag = 0;
         //System.out.println(c.length);
         /**
-         * 去锟斤拷锟斤拷锟斤拷锟斤拷前锟斤拷募锟斤拷锟�
+         * 铡婚敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷峰墠阌熸枻鎷峰嫙阌熸枻鎷烽敓锟?
          *
          */
         while (flag < c.length && c[flag] == 0) {
@@ -165,7 +165,7 @@ public class Solution {
             flag++;
         }
         /**
-         * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷str
+         * 阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹str
          */
 //		for (int i = flag; i < c.length; i++) {
 //			str+=c[i];

@@ -1,4 +1,4 @@
-package lsf._111_MinimumDepthofBinaryTree;
+ï»¿package lsf._111_MinimumDepthofBinaryTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -7,23 +7,23 @@ import lsf._000_base.TreeNode;
 
 public class Solution {
 	/**
-	 * Ö±½Ó´ÓÇó×î´óÉî¶È¸´ÖÆµÄ´úÂë£¬¼ÓÁË¸öÒ¶×Ó½ÚµãÅĞ·µ»Ø
+	 * ç›´æ¥ä»æ±‚æœ€å¤§æ·±åº¦å¤åˆ¶çš„ä»£ç ï¼ŒåŠ äº†ä¸ªå¶å­èŠ‚ç‚¹åˆ¤è¿”å›
 	 * @param root
 	 * @return
 	 */
 	public int minDepth(TreeNode root) {
 		if (root == null)
 			return 0;
-		int d = 0;//¼ÇÂ¼²ãÊı
+		int d = 0;//è®°å½•å±‚æ•°
 		Queue<TreeNode> queue = new LinkedList<TreeNode>();
 		queue.add(root);
 		TreeNode tn;
-		int is = 1, next = 0;//±¾²ã¸öÊıºÍÏÂÒ»²ã¸öÊı
+		int is = 1, next = 0;//æœ¬å±‚ä¸ªæ•°å’Œä¸‹ä¸€å±‚ä¸ªæ•°
 		while ((tn = queue.poll()) != null) {
 			is--;
-			//ÏÂÃæÕâ¸öÅĞ¶ÏÊÇĞÂ¼ÓµÄ£¬Ö»ÒªÃ»º¢×Ó¾Í¿ÉÒÔ·µ»ØÁË
-			//ÓÉÓÚÔÚ±¾²ã½áÊøµÄÊ±ºò²ãÊı+1
-			//ÌáÇ°Ìø³öÒªÔö¼ÓÒ»²ã
+			//ä¸‹é¢è¿™ä¸ªåˆ¤æ–­æ˜¯æ–°åŠ çš„ï¼Œåªè¦æ²¡å­©å­å°±å¯ä»¥è¿”å›äº†
+			//ç”±äºåœ¨æœ¬å±‚ç»“æŸçš„æ—¶å€™å±‚æ•°+1
+			//æå‰è·³å‡ºè¦å¢åŠ ä¸€å±‚
 			if (tn.left == null && tn.right == null)
 				return ++d;
 			if (tn.left != null) {
@@ -34,10 +34,10 @@ public class Solution {
 				queue.add(tn.right);
 				next++;
 			}
-			if (is == 0) { // ±¾²ã½áÊø
+			if (is == 0) { // æœ¬å±‚ç»“æŸ
 				is = next;
 				next = 0;
-				d++;//Ã¿Ò»´ÎÔÚ±¾²ã½áÊøµÄÊ±ºò²ãÊı+1
+				d++;//æ¯ä¸€æ¬¡åœ¨æœ¬å±‚ç»“æŸçš„æ—¶å€™å±‚æ•°+1
 			}
 		}
 		return 0;

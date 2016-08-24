@@ -1,8 +1,8 @@
-package lsf._000_test.map;
+ï»¿package lsf._000_test.map;
 
 /**
  * @author scolphew
- * @create 2016Äê08ÔÂ08ÈÕ
+ * @create 2016å¹´08æœˆ08æ—¥
  */
 public class MutableKey {
     private int i;

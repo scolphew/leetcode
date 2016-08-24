@@ -1,4 +1,4 @@
-package lsf._171_ExcelSheetColumnNumber;
+﻿package lsf._171_ExcelSheetColumnNumber;
 
 public class Solution {
 	public static void main(String[] args) {

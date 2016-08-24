@@ -1,8 +1,8 @@
-package _000_;
+ï»¿package _000_;
 
 /**
  * @author scolphew
- * @create 2016Äê07ÔÂ07ÈÕ
+ * @create 2016å¹´07æœˆ07æ—¥
  */
 public class test {
     public static void main(String[] args) {

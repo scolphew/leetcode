@@ -1,4 +1,4 @@
-package lsf._075_sortColors;
+ï»¿package lsf._075_sortColors;
 
 public class Solution {
 
@@ -18,18 +18,18 @@ public class Solution {
 	// Given an array with n objects colored red, white or blue, sort them so
 	// that objects of the same color are adjacent, with the colors in the order
 	// red, white and blue.
-	// ¿¼ÂÇµ½ÓëºìÉ«£¬°×É«»òÀ¶É«µÄn¸ö¶ÔÏóÊı×é£¬¶ÔËüÃÇ½øĞĞÅÅĞò£¬Ê¹ÏàÍ¬ÑÕÉ«µÄ¶ÔÏóÊÇÏàÁÚµÄ£¬ÓëÑÕÉ«µÄË³ĞòºìÉ«£¬°×É«ºÍÀ¶É«¡£
+	// è€ƒè™‘åˆ°ä¸çº¢è‰²ï¼Œç™½è‰²æˆ–è“è‰²çš„nä¸ªå¯¹è±¡æ•°ç»„ï¼Œå¯¹å®ƒä»¬è¿›è¡Œæ’åºï¼Œä½¿ç›¸åŒé¢œè‰²çš„å¯¹è±¡æ˜¯ç›¸é‚»çš„ï¼Œä¸é¢œè‰²çš„é¡ºåºçº¢è‰²ï¼Œç™½è‰²å’Œè“è‰²ã€‚
 	// Here, we will use the integers 0, 1, and 2 to represent the color red,
 	// white, and blue respectively.
 	//
-	// ÔÚÕâÀï£¬ÎÒÃÇ½«Ê¹ÓÃÕûÊı0£¬1ºÍ2·Ö±ğ±íÊ¾ºìÉ«£¬°×É«ºÍÀ¶É«¡£
+	// åœ¨è¿™é‡Œï¼Œæˆ‘ä»¬å°†ä½¿ç”¨æ•´æ•°0ï¼Œ1å’Œ2åˆ†åˆ«è¡¨ç¤ºçº¢è‰²ï¼Œç™½è‰²å’Œè“è‰²ã€‚
 	// Note:
 	// You are not suppose to use the library's sort function for this problem.
-	// ÄãÊÇ²»ÊÇÏëÀûÓÃÍ¼Êé¹İµÄÅÅĞò¹¦ÄÜ£¬¶ÔÓÚÕâ¸öÎÊÌâ¡£
+	// ä½ æ˜¯ä¸æ˜¯æƒ³åˆ©ç”¨å›¾ä¹¦é¦†çš„æ’åºåŠŸèƒ½ï¼Œå¯¹äºè¿™ä¸ªé—®é¢˜ã€‚
 	// click to show follow up.
 	public void sortColors(int[] nums) {
 		int red = 0, white = 0, blue = 0;
-		//Ë³Ğò¼ìË÷ ¼ÆÊı
+		//é¡ºåºæ£€ç´¢ è®¡æ•°
 		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] == 0)
 				red++;

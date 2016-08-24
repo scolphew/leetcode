@@ -1,4 +1,4 @@
-package lsf._018_4Sum;
+ï»¿package lsf._018_4Sum;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,81 +10,81 @@ import lsf._000_base.Print;
 
 public class Solution {
 	public List<List<Integer>> fourSum(int[] nums, int target) {
-		Set<List<Integer>> set = new HashSet<List<Integer>>(); // »¹ÊÇÓÃSet·ÀÖ¹ÖØ¸´¼ÓÈë
-		quickSort(nums, 0, nums.length - 1);// ÅÅĞò£¬²»½âÊÍ
+		Set<List<Integer>> set = new HashSet<List<Integer>>(); // è¿˜æ˜¯ç”¨Seté˜²æ­¢é‡å¤åŠ å…¥
+		quickSort(nums, 0, nums.length - 1);// æ’åºï¼Œä¸è§£é‡Š
 		for (int i = 0; i < nums.length; i++) {
 			if(i>0 && nums[i]==nums[i-1])
 				continue;
-			// ²éÕÒiÖ®ºóµÄ²¿·ÖÖĞÕÒµ½3¸öÊı£¬Ê¹ÕâËÄ¸öÊıµÄºÍÎªtarget
+			// æŸ¥æ‰¾iä¹‹åçš„éƒ¨åˆ†ä¸­æ‰¾åˆ°3ä¸ªæ•°ï¼Œä½¿è¿™å››ä¸ªæ•°çš„å’Œä¸ºtarget
 			List<List<Integer>> listThreeNumber = threeSum2(nums, i + 1,
 					nums.length - 1, target - nums[i]);
-			for (List<Integer> list : listThreeNumber) {// °Ñµ±Ç°µÄÖµ²åµ½Ã¿Ò»¸öÁ´±íÍ·
+			for (List<Integer> list : listThreeNumber) {// æŠŠå½“å‰çš„å€¼æ’åˆ°æ¯ä¸€ä¸ªé“¾è¡¨å¤´
 				list.add(0, nums[i]);
 			}
-			set.addAll(listThreeNumber);// °ÑÕâÒ»²¿·Ö·Åµ½setÀï
+			set.addAll(listThreeNumber);// æŠŠè¿™ä¸€éƒ¨åˆ†æ”¾åˆ°seté‡Œ
 		}
-		return new ArrayList<List<Integer>>(set);// °ÑSetÈû½ølist·µ»Ø
+		return new ArrayList<List<Integer>>(set);// æŠŠSetå¡è¿›listè¿”å›
 	}
 	
 	public List<List<Integer>> fourSum2(int[] nums, int target) {
-		Set<List<Integer>> set = new HashSet<List<Integer>>(); // »¹ÊÇÓÃSet·ÀÖ¹ÖØ¸´¼ÓÈë
-		quickSort(nums, 0, nums.length - 1);// ÅÅĞò£¬²»½âÊÍ
+		Set<List<Integer>> set = new HashSet<List<Integer>>(); // è¿˜æ˜¯ç”¨Seté˜²æ­¢é‡å¤åŠ å…¥
+		quickSort(nums, 0, nums.length - 1);// æ’åºï¼Œä¸è§£é‡Š
 		for (int i = 0; i < nums.length; i++) {
 			if(i>0 && nums[i]==nums[i-1])
 				continue;
-			// ²éÕÒiÖ®ºóµÄ²¿·ÖÖĞÕÒµ½3¸öÊı£¬Ê¹ÕâËÄ¸öÊıµÄºÍÎªtarget
+			// æŸ¥æ‰¾iä¹‹åçš„éƒ¨åˆ†ä¸­æ‰¾åˆ°3ä¸ªæ•°ï¼Œä½¿è¿™å››ä¸ªæ•°çš„å’Œä¸ºtarget
 			List<List<Integer>> listThreeNumber = threeSum2(nums, i + 1,
 					nums.length - 1, target - nums[i]);
-			for (List<Integer> list : listThreeNumber) {// °Ñµ±Ç°µÄÖµ²åµ½Ã¿Ò»¸öÁ´±íÍ·
+			for (List<Integer> list : listThreeNumber) {// æŠŠå½“å‰çš„å€¼æ’åˆ°æ¯ä¸€ä¸ªé“¾è¡¨å¤´
 				list.add(0, nums[i]);
 			}
-			set.addAll(listThreeNumber);// °ÑÕâÒ»²¿·Ö·Åµ½setÀï
+			set.addAll(listThreeNumber);// æŠŠè¿™ä¸€éƒ¨åˆ†æ”¾åˆ°seté‡Œ
 		}
-		return new ArrayList<List<Integer>>(set);// °ÑSetÈû½ølist·µ»Ø
+		return new ArrayList<List<Integer>>(set);// æŠŠSetå¡è¿›listè¿”å›
 	}
 
 	/**
-	 * µÚ15ÌâµÄº¯Êı¡£ Ö±½Ó¸´ÖÆ¹ıÀ´µÄ£¬Ñ§³¤Äã²»ÓÃ¿´ÁË
+	 * ç¬¬15é¢˜çš„å‡½æ•°ã€‚ ç›´æ¥å¤åˆ¶è¿‡æ¥çš„ï¼Œå­¦é•¿ä½ ä¸ç”¨çœ‹äº†
 	 * @return
 	 */
 	public List<List<Integer>> threeSum2(int[] nums, int p, int q, int target) {
-		// quickSort(nums, p,q); // ÏÈ¶ÔÊı×éÅÅĞò ¸´ÔÓ¶¼O(n)£¬ÏÈÅÅºÃĞòÔÙµ÷ÓÃ ÅÅ¹ıĞòµÄ¾ÍÃâÁË°É
-		Set<List<Integer>> set = new HashSet<List<Integer>>(); // ÏÈÊ¹ÓÃSet·ÀÖ¹ÖØ¸´¼ÓÈë
-		for (int i = p; i < q-1 ; i++) { // ¶ÔÃ¿¸öÊı±ãÀû£¬µ¹ÊıµÚÈı¸ö¾Í½áÊøÁË¡£
+		// quickSort(nums, p,q); // å…ˆå¯¹æ•°ç»„æ’åº å¤æ‚éƒ½O(n)ï¼Œå…ˆæ’å¥½åºå†è°ƒç”¨ æ’è¿‡åºçš„å°±å…äº†å§
+		Set<List<Integer>> set = new HashSet<List<Integer>>(); // å…ˆä½¿ç”¨Seté˜²æ­¢é‡å¤åŠ å…¥
+		for (int i = p; i < q-1 ; i++) { // å¯¹æ¯ä¸ªæ•°ä¾¿åˆ©ï¼Œå€’æ•°ç¬¬ä¸‰ä¸ªå°±ç»“æŸäº†ã€‚
 			if(i>p && nums[i]==nums[i-1])
 				continue;
-			for (int left = i + 1, right = q; left < right;) { // ¶ÔÖ®ºóµÄÊıË«Ö¸Õë±éÀú
-				if (nums[i] + nums[left] + nums[right] == target) { // Âú×ãÌõ¼ş¾Í¿ÉÒÔÊä³öÁË
+			for (int left = i + 1, right = q; left < right;) { // å¯¹ä¹‹åçš„æ•°åŒæŒ‡é’ˆéå†
+				if (nums[i] + nums[left] + nums[right] == target) { // æ»¡è¶³æ¡ä»¶å°±å¯ä»¥è¾“å‡ºäº†
 					// List<Integer> l = new ArrayList<Integer>(3); //
-					// ÕâÊ±ºò´´½¨Á´±í£¬´æÈı¸öÊı¾ÍĞĞ£¬²»ÓÃÌ«¶à¡£
-					List<Integer> l = new ArrayList<Integer>(4);// Çó²»ÔÚ¼ÓÁË
+					// è¿™æ—¶å€™åˆ›å»ºé“¾è¡¨ï¼Œå­˜ä¸‰ä¸ªæ•°å°±è¡Œï¼Œä¸ç”¨å¤ªå¤šã€‚
+					List<Integer> l = new ArrayList<Integer>(4);// æ±‚ä¸åœ¨åŠ äº†
 					l.add(nums[i]);
 					l.add(nums[left]);
-					l.add(nums[right]); // °ÑÈı¸öÊı´æ½øÈ¥
-					set.add(l); // ¼ÓÈë×ÜÁĞ±í
-					--right;// µ«ÊÇ£¬
-					++left; // ÎÒÃÇ²¢²»ÄÜ±£Ö¤Î¨Ò»£¬ËùÒÔ
-					continue; // Ö»ÄÜÌø³öµ±Ç°Ñ­»·
+					l.add(nums[right]); // æŠŠä¸‰ä¸ªæ•°å­˜è¿›å»
+					set.add(l); // åŠ å…¥æ€»åˆ—è¡¨
+					--right;// ä½†æ˜¯ï¼Œ
+					++left; // æˆ‘ä»¬å¹¶ä¸èƒ½ä¿è¯å”¯ä¸€ï¼Œæ‰€ä»¥
+					continue; // åªèƒ½è·³å‡ºå½“å‰å¾ªç¯
 				}
-				if (nums[i] + nums[left] + nums[right] > target)// Èç¹û£¬ºÍÆ«´óµÄ»°
-					--right;// ºóÖ¸ÕëÇ°ÒÆ
+				if (nums[i] + nums[left] + nums[right] > target)// å¦‚æœï¼Œå’Œåå¤§çš„è¯
+					--right;// åæŒ‡é’ˆå‰ç§»
 				else
-					// ·ñÔò
-					++left;// Ç°Ö¸ÕëºóÒÆ
+					// å¦åˆ™
+					++left;// å‰æŒ‡é’ˆåç§»
 			}
 		}
-		return new ArrayList<List<Integer>>(set);// °ÑSetÈû½ølist·µ»Ø
+		return new ArrayList<List<Integer>>(set);// æŠŠSetå¡è¿›listè¿”å›
 	}
 
 	/**
-	 * ¿ìËÙÅÅĞòËã·¨
+	 * å¿«é€Ÿæ’åºç®—æ³•
 	 * 
 	 * @param nums
-	 *            ÅÅĞòÊı×é
+	 *            æ’åºæ•°ç»„
 	 * @param p
-	 *            ÅÅĞòÆğµã
+	 *            æ’åºèµ·ç‚¹
 	 * @param q
-	 *            ÅÅĞòÖÕµã
+	 *            æ’åºç»ˆç‚¹
 	 */
 	public void quickSort(int[] nums, int p, int q) {
 		if (q <= p)

@@ -1,4 +1,4 @@
-package lsf._169_MajorityElement;
+﻿package lsf._169_MajorityElement;
 
 import java.util.Arrays;
 

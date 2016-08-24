@@ -1,4 +1,4 @@
-package lsf._001_twoSum;
+ï»¿package lsf._001_twoSum;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,18 +18,18 @@ public class TwoSum {
 		Map<Integer, Integer> hashtable=new HashMap<Integer,Integer>();
 		for (int i = 0; i < nums.length; i++) {
 				try {
-					//Èç¹ûÄÜÔÚhashtableÕÒµ½ÕÒµ½ÁíÒ»°ë£¬ÔòÖ±½Ó·µ»Ø
+					//å¦‚æžœèƒ½åœ¨hashtableæ‰¾åˆ°æ‰¾åˆ°å¦ä¸€åŠï¼Œåˆ™ç›´æŽ¥è¿”å›ž
 					int [] x={ hashtable.get(target-nums[i]) , i+1};
 					return x;
 				} catch (Exception e) {
-					//ÈçÅ×³öÒì³££¬ÔòËµÃ÷Ã»ÕÒµ½ÁíÒ»°ë£¬½«µ±Ç°Êý´æÈëhashtable
+					//å¦‚æŠ›å‡ºå¼‚å¸¸ï¼Œåˆ™è¯´æ˜Žæ²¡æ‰¾åˆ°å¦ä¸€åŠï¼Œå°†å½“å‰æ•°å­˜å…¥hashtable
 					hashtable.put( nums[i] , i+1);
 				}
 		}
 		return null;
 	}
 	/**
-	 * ±éÀúÊý×é£¬Ã¿¸öÊý²éÕÒÖ®Ç°ÊÇ·ñÓöµ½¹ýÆ¥ÅäµÄÊý
+	 * éåŽ†æ•°ç»„ï¼Œæ¯ä¸ªæ•°æŸ¥æ‰¾ä¹‹å‰æ˜¯å¦é‡åˆ°è¿‡åŒ¹é…çš„æ•°
 	 * @param nums
 	 * @param target
 	 * @return
@@ -37,7 +37,7 @@ public class TwoSum {
 	public int[] twoSum2(int[] nums, int target) {
 		Map<Integer, Integer> hashtable=new HashMap<Integer,Integer>();
 		for (int i = 0; i < nums.length; i++) {
-			//Óë·½·¨¶þµÄÇø±ðÔÚÓÚÏÈÅÐ¶ÏÊÇ·ñÔÚÊý×éÖÐ£¬¶ø²»ÊÇÖ±½Ó¼ì²â
+			//ä¸Žæ–¹æ³•äºŒçš„åŒºåˆ«åœ¨äºŽå…ˆåˆ¤æ–­æ˜¯å¦åœ¨æ•°ç»„ä¸­ï¼Œè€Œä¸æ˜¯ç›´æŽ¥æ£€æµ‹
 			if( hashtable.containsKey( target-nums[i] )   ){
 				int [] x={ hashtable.get(target-nums[i]) , i+1};
 				return x;

@@ -1,4 +1,4 @@
-package lsf._202_HappyNumber;
+ï»¿package lsf._202_HappyNumber;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -22,11 +22,11 @@ public class Solution {
 	// (where it will stay), or it loops endlessly in a cycle which does not
 	// include 1. Those numbers for which this process ends in 1 are happy
 	// numbers.
-	// Ğ´Ò»¸öËã·¨À´È·¶¨Ò»¸öÊı×ÖÊÇ¡°¿ìÀÖ¡±¡£
+	// å†™ä¸€ä¸ªç®—æ³•æ¥ç¡®å®šä¸€ä¸ªæ•°å­—æ˜¯â€œå¿«ä¹â€ã€‚
 	//
-	// ¿ìÀÖµÄ±àºÅÊÇÍ¨¹ıÒÔÏÂ·½·¨È·¶¨£º
-	// ÓÃÈÎÒâµÄÕıÕûÊı¿ªÊ¼£¬ÓÉËüµÄÎ»ÊıµÄÆ½·½ºÍÌæ»»µÄÊıÄ¿£¬²¢ÖØ¸´¸Ã¹ı³Ì£¬Ö±µ½ÊıÄ¿µÈÓÚ1£¨ÆäÖĞ£¬Ëü½«Í£Áô£©£¬
-	// »òËüÑ­»·ÎŞĞİÖ¹µØÔÚÒ»¸öÖÜÆÚÄÚ²»°üÀ¨1.´Ë¹ı³ÌÔÚ1¸ßĞËºÅ½áÊøÕâĞ©Êı×Ö¡£
+	// å¿«ä¹çš„ç¼–å·æ˜¯é€šè¿‡ä»¥ä¸‹æ–¹æ³•ç¡®å®šï¼š
+	// ç”¨ä»»æ„çš„æ­£æ•´æ•°å¼€å§‹ï¼Œç”±å®ƒçš„ä½æ•°çš„å¹³æ–¹å’Œæ›¿æ¢çš„æ•°ç›®ï¼Œå¹¶é‡å¤è¯¥è¿‡ç¨‹ï¼Œç›´åˆ°æ•°ç›®ç­‰äº1ï¼ˆå…¶ä¸­ï¼Œå®ƒå°†åœç•™ï¼‰ï¼Œ
+	// æˆ–å®ƒå¾ªç¯æ— ä¼‘æ­¢åœ°åœ¨ä¸€ä¸ªå‘¨æœŸå†…ä¸åŒ…æ‹¬1.æ­¤è¿‡ç¨‹åœ¨1é«˜å…´å·ç»“æŸè¿™äº›æ•°å­—ã€‚
 	public boolean isHappy(int n) {
 		int sum = n;
 		//System.out.println(sum);
@@ -38,7 +38,7 @@ public class Solution {
 				sum += Math.pow(s.charAt(i) - '0', 2);
 			}
 	//		System.out.println(sum);
-			//Èç¹ûÒÑ¾­Óöµ½¹ı  ½áÊø
+			//å¦‚æœå·²ç»é‡åˆ°è¿‡  ç»“æŸ
 			if(set.contains(sum))
 				return false;
 			set.add(sum);

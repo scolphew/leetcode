@@ -1,4 +1,4 @@
-package lsf._191_numberOf1Bits;
+ï»¿package lsf._191_numberOf1Bits;
 
 public class Solution {
 
@@ -13,18 +13,18 @@ public class Solution {
 		System.out.println( (int)2147483649l) ;
 	}
 	/*
-Write a function that takes an unsigned integer and returns the number of ¡¯1' bits it has (also known as the Hamming weight).
+Write a function that takes an unsigned integer and returns the number of â€™1' bits it has (also known as the Hamming weight).
 
-For example, the 32-bit integer ¡¯11' has binary representation 00000000000000000000000000001011, so the function should return 3.
+For example, the 32-bit integer â€™11' has binary representation 00000000000000000000000000001011, so the function should return 3.
 
 Credits:
 Special thanks to @ts for adding this problem and creating all test cases.
-Ğ´Ò»¸öº¯Êı£¬ËüµÄÎŞ·ûºÅÕûÊı²¢·µ»ØËü¾ßÓĞ¡°1¡±µÄÎ»£¨Ò²±»³ÆÎªººÃ÷È¨ÖØ£©µÄÊıÁ¿¡£
+å†™ä¸€ä¸ªå‡½æ•°ï¼Œå®ƒçš„æ— ç¬¦å·æ•´æ•°å¹¶è¿”å›å®ƒå…·æœ‰â€œ1â€çš„ä½ï¼ˆä¹Ÿè¢«ç§°ä¸ºæ±‰æ˜æƒé‡ï¼‰çš„æ•°é‡ã€‚
 
-ÀıÈç£¬32Î»ÕûÊı'11'¾ßÓĞ¶ş½øÖÆ±íÊ¾00000000000000000000000000001011£¬Òò´Ëº¯ÊıÓ¦¸Ã·µ»Ø3¡£
+ä¾‹å¦‚ï¼Œ32ä½æ•´æ•°'11'å…·æœ‰äºŒè¿›åˆ¶è¡¨ç¤º00000000000000000000000000001011ï¼Œå› æ­¤å‡½æ•°åº”è¯¥è¿”å›3ã€‚
 
-»ı·Ö£º
-ÌØ±ğ¸ĞĞ»@tsÌí¼ÓÕâ¸öÎÊÌâ£¬´´½¨ËùÓĞµÄ²âÊÔÓÃÀı¡£
+ç§¯åˆ†ï¼š
+ç‰¹åˆ«æ„Ÿè°¢@tsæ·»åŠ è¿™ä¸ªé—®é¢˜ï¼Œåˆ›å»ºæ‰€æœ‰çš„æµ‹è¯•ç”¨ä¾‹ã€‚
 	 */
 	public int hammingWeight(int n) {
 		int i=0;

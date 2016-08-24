@@ -1,4 +1,4 @@
-package lsf._094_BinaryTreeInorderTraversal;
+﻿package lsf._094_BinaryTreeInorderTraversal;
 
 import lsf._000_base.Print;
 import lsf._000_base.TreeNode;
@@ -12,15 +12,15 @@ public class Solution {
 		List<Integer> list = new ArrayList<Integer>();
 		Stack<TreeNode> stack = new Stack<TreeNode>();
 		TreeNode p = root;
-		while (p != null || !stack.isEmpty()) { // 锟角匡拷锟斤拷锟窖拷锟�
-			while (p != null) { // 寻锟斤拷锟斤拷锟斤拷锟铰的节碉拷
+		while (p != null || !stack.isEmpty()) { // 阌熻鍖℃嫹阌熸枻鎷烽敓绐栴叏鎷烽敓锟?
+			while (p != null) { // 瀵婚敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熼摪镄勮妭纰夋嫹
 				stack.push(p);
 				p = p.left;
 			}
-			if (!stack.isEmpty()) { // 锟斤拷锟斤拷锟斤拷说锟斤拷锟斤拷前栈锟斤拷锟斤拷锟斤拷锟斤拷锟铰角的节碉拷
+			if (!stack.isEmpty()) { // 阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷疯阌熸枻鎷烽敓鏂ゆ嫹鍓嶆爤阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熼摪瑙掔殑鑺傜鎷?
 				p = stack.pop();
-				list.add(p.val); // 锟斤拷锟斤拷媒诘悖�锟矫节碉拷锟饺幻伙拷锟斤拷锟斤拷锟斤拷锟�
-				p = p.right; // 锟斤拷锟斤拷锟揭猴拷锟斤拷
+				list.add(p.val); // 阌熸枻鎷烽敓鏂ゆ嫹濯掕瘶镇栵拷阌熺煫鑺傜鎷烽敓楗哄够浼欐嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓锟?
+				p = p.right; // 阌熸枻鎷烽敓鏂ゆ嫹阌熸彮鐚存嫹阌熸枻鎷?
 			}
 		}
 		return list;

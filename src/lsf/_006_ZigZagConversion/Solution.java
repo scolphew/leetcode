@@ -1,8 +1,8 @@
-package lsf._006_ZigZagConversion;
+ï»¿package lsf._006_ZigZagConversion;
 
 /**
  * @author scolphew
- * @create 2016Äê07ÔÂ07ÈÕ
+ * @create 2016å¹´07æœˆ07æ—¥
  */
 public class Solution {
     public String convert(String s, int numRows) {

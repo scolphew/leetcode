@@ -1,11 +1,11 @@
-package lsf._000_test.map;
+ï»¿package lsf._000_test.map;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * @author scolphew
- * @create 2016Äê08ÔÂ08ÈÕ
+ * @create 2016å¹´08æœˆ08æ—¥
  */
 public class ChangeHash {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package lsf._058_lengthofLastWord;
+ï»¿package lsf._058_lengthofLastWord;
 
 public class Solution {
 
@@ -13,11 +13,11 @@ public class Solution {
 
 	/**
 	 *  Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
-	 *	¸ø¶¨Ò»¸ö×Ö·û´®sÓÉÉÏ/Ð¡Ð´×ÖÄ¸ºÍ¿ÕµÄ¿Õ¼ä×Ö·û''£¬·µ»Ø×Ö·û´®µÄ×îºóÒ»¸ö×ÖµÄ³¤¶È¡£
+	 *	ç»™å®šä¸€ä¸ªå­—ç¬¦ä¸²sç”±ä¸Š/å°å†™å­—æ¯å’Œç©ºçš„ç©ºé—´å­—ç¬¦''ï¼Œè¿”å›žå­—ç¬¦ä¸²çš„æœ€åŽä¸€ä¸ªå­—çš„é•¿åº¦ã€‚
 	 *	If the last word does not exist, return 0.
-	 *	Èç¹û×îºóÒ»¸ö×Ö²»´æÔÚ£¬Ôò·µ»Ø0¡£
+	 *	å¦‚æžœæœ€åŽä¸€ä¸ªå­—ä¸å­˜åœ¨ï¼Œåˆ™è¿”å›ž0ã€‚
 	 *	Note: A word is defined as a character sequence consists of non-space characters only.
-	 *	×¢£ºÒ»¸ö×Ö±»¶¨ÒåÎªÒ»¸ö×Ö·ûÐòÁÐÖ»°üÀ¨·Ç¿Õ¸ñ×Ö·û¡£
+	 *	æ³¨ï¼šä¸€ä¸ªå­—è¢«å®šä¹‰ä¸ºä¸€ä¸ªå­—ç¬¦åºåˆ—åªåŒ…æ‹¬éžç©ºæ ¼å­—ç¬¦ã€‚
 	 *	For example,
 	 *	Given s = "Hello World",
 	 *	return 5. 
@@ -26,12 +26,12 @@ public class Solution {
 	 */
 	public int lengthOfLastWord(String s) {
 		int j=0,i=s.length()-1;
-		//È¥µô×îºóµÄ¿Õ¸ñ
+		//åŽ»æŽ‰æœ€åŽçš„ç©ºæ ¼
 		for (; i>=0; --i) {
 			if(s.charAt(i)!=32)
 				break;
 		}
-		//´ÓºóÍùÇ°±ãÀû
+		//ä»ŽåŽå¾€å‰ä¾¿åˆ©
 		for (; i >=0; i--,j++) {
 			if( s.charAt(i)==32)
 				return j;

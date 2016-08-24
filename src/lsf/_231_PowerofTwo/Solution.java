@@ -1,4 +1,4 @@
-package lsf._231_PowerofTwo;
+﻿package lsf._231_PowerofTwo;
 
 public class Solution {
 	public static void main(String[] args) {

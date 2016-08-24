@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * 
  */
 package lsf._104_MaximumDepthOfBinaryTree;
@@ -51,7 +51,7 @@ public class Solution {
 				queue.add(tn.right);
 				next++;
 			}
-			if(is==0){  //±¾²ã½áÊø   
+			if(is==0){  //æœ¬å±‚ç»“æŸ   
 				is=next;
 				next=0;
 				d++;

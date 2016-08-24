@@ -1,4 +1,4 @@
-package lsf._189_rotateArray;
+ï»¿package lsf._189_rotateArray;
 
 public class Solution {
 
@@ -15,12 +15,12 @@ public class Solution {
 	}
 
 //	Rotate an array of n elements to the right by k steps.
-//	Ğı×ªn¸öÔªËØÏòÓÒÒÆk²½µÄÕóÁĞ¡£
+//	æ—‹è½¬nä¸ªå…ƒç´ å‘å³ç§»kæ­¥çš„é˜µåˆ—ã€‚
 //	For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
 //
 //	Note:
 //	Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
-//	ÊÔ×ÅÏë³ö¾¡¿ÉÄÜ¶àµÄ½â¾ö·½°¸£¬Äã¿ÉÒÔ£¬ÖÁÉÙÓĞ3ÖÖ²»Í¬µÄ·½·¨À´½â¾öÕâ¸öÎÊÌâ¡£
+//	è¯•ç€æƒ³å‡ºå°½å¯èƒ½å¤šçš„è§£å†³æ–¹æ¡ˆï¼Œä½ å¯ä»¥ï¼Œè‡³å°‘æœ‰3ç§ä¸åŒçš„æ–¹æ³•æ¥è§£å†³è¿™ä¸ªé—®é¢˜ã€‚
 //	[show hint]
 //
 //	Related problem: Reverse Words in a String II
@@ -37,7 +37,7 @@ public class Solution {
 		reversalArray(nums,0,n-1);
 	}
 	/**
-	 * °ÑÊı×éarrayµÄÖµ·´×ª
+	 * æŠŠæ•°ç»„arrayçš„å€¼åè½¬
 	 */
 	private void reversalArray(int[] array,int i,int j) {
 		while(i<j){

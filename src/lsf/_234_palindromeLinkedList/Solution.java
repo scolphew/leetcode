@@ -1,4 +1,4 @@
-package lsf._234_palindromeLinkedList;
+ï»¿package lsf._234_palindromeLinkedList;
 
 import lsf._000_base.ListNode;
 
@@ -11,8 +11,8 @@ public class Solution {
 		int[] i = {1,2,1 };
 
 		Solution s = new Solution();
-		ListNode head =s.scanf(i);//ÊäÈë
-		s.print(head);//Êä³ö
+		ListNode head =s.scanf(i);//è¾“å…¥
+		s.print(head);//è¾“å‡º
 		System.out.println(s.isPalindrome(head));
 
 	}
@@ -25,48 +25,48 @@ public class Solution {
 		
 		ListNode p = head;
 		/**
-		 * »ñµÃ³¤¶È
+		 * èŽ·å¾—é•¿åº¦
 		 */
 		while (p != null) {
 			p = p.next;
 			++len;
 		}
-		System.out.println("ÏÈ»ñµÃ³¤¶ÈÎª:"+len);                         // T(n)=n
+		System.out.println("å…ˆèŽ·å¾—é•¿åº¦ä¸º:"+len);                         // T(n)=n
 		
 		if(len<2)
 			return true;
 		
 		p=head;
 		
-			System.out.println("ÕâÀïÊÇÅ¼Êý");
+			System.out.println("è¿™é‡Œæ˜¯å¶æ•°");
 			int m=1;
 			ListNode q=p.next,per=null;
 			
 			@SuppressWarnings("unused")
 			ListNode sco_text=null;
 			
-			while (p != null && m<len/2) {              //»¨ÁË        T(n)=n/2
-					per=p;    //ÄæÐò
+			while (p != null && m<len/2) {              //èŠ±äº†        T(n)=n/2
+					per=p;    //é€†åº
 					p=q;
 					q=q.next;
 					p.next=per;
 					m++;
 			}
 			head.next=null;
-			//ÏÖÔÚ£¬ÒÑ¾­³É¹¦µÄ½«Á´±íÇ°°ë²¿·Ö·´×ªÁË;
-			if(len%2==1){              //³¤¶ÈÎªÆæÊý
+			//çŽ°åœ¨ï¼Œå·²ç»æˆåŠŸçš„å°†é“¾è¡¨å‰åŠéƒ¨åˆ†åè½¬äº†;
+			if(len%2==1){              //é•¿åº¦ä¸ºå¥‡æ•°
 				q=q.next;
 			}
 			
 			while(p!=null){   
-				if(p.val==q.val){   //Á½±ßÀ©Õ¹  £¬ÈôÒ»Ñù ¼ÌÐø       
+				if(p.val==q.val){   //ä¸¤è¾¹æ‰©å±•  ï¼Œè‹¥ä¸€æ · ç»§ç»­       
 					q=q.next;
 					p=p.next;
-				}else{                  //²»Ò»Ñù¾Í¿ÉÒÔ³·ÁË
+				}else{                  //ä¸ä¸€æ ·å°±å¯ä»¥æ’¤äº†
 					return false;          
 				}
 			}
-			return true;            // ³öÀ´¾Í¶ÔÁË           T(n)=n/2  
+			return true;            // å‡ºæ¥å°±å¯¹äº†           T(n)=n/2  
 
 	}
 

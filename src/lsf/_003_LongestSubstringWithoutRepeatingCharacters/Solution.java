@@ -1,4 +1,4 @@
-package lsf._003_LongestSubstringWithoutRepeatingCharacters;
+ï»¿package lsf._003_LongestSubstringWithoutRepeatingCharacters;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -14,7 +14,7 @@ public class Solution {
 	}
 	
 	/**
-	 * µÚ¶þ´Î³öÏÖ
+	 * ç¬¬äºŒæ¬¡å‡ºçŽ°
 	 * @param s
 	 * @return
 	 */
@@ -27,13 +27,13 @@ public class Solution {
 		}
 		int max=0,start=-1;
 		for (int i = 0; i < s.length(); i++) {
-			int x=last[s.charAt(i)];//ÉÏÒ»´Î
+			int x=last[s.charAt(i)];//ä¸Šä¸€æ¬¡
 
-			if( x<start ){			//ÏòÇ°µ½start
+			if( x<start ){			//å‘å‰åˆ°start
 				if(i-start>max){
 					max=i-start;
 				}
-			}else{                 //ÏòÇ°µ½i
+			}else{                 //å‘å‰åˆ°i
 				if(i-x>max){
 					max=i-x;
 				}

@@ -1,12 +1,12 @@
-package lsf._009_PalindromeNumber;
+ï»¿package lsf._009_PalindromeNumber;
 
 /**
  * @author scolphew
- * @create 2016Äê07ÔÂ07ÈÕ
+ * @create 2016å¹´07æœˆ07æ—¥
  */
 public class Solution {
     public boolean isPalindrome(int x){
-        if (x<0 || (x!=0 && x%10==0)) return false;//¸ºÊıºÍÄ©Î²Îª0µÄ ·µ»Øfalse
+        if (x<0 || (x!=0 && x%10==0)) return false;//è´Ÿæ•°å’Œæœ«å°¾ä¸º0çš„ è¿”å›false
         int var = 0;
         while (x > var){
             var = var * 10 + x%10;

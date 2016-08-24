@@ -1,4 +1,4 @@
-package lsf._200_numberOfIslands;
+﻿package lsf._200_numberOfIslands;
 
 public class Solution2 {
 	public static void main(String[] args){
@@ -23,7 +23,7 @@ public class Solution2 {
 //		}
 		
 		
-		System.out.println("��½   "+s.numIslands(grid));
+		System.out.println("大陆   "+s.numIslands(grid));
 	}
 	
 	public int numIslands(char[][] grid) {

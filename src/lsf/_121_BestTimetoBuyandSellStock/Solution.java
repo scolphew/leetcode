@@ -1,4 +1,4 @@
-package lsf._121_BestTimetoBuyandSellStock;
+﻿package lsf._121_BestTimetoBuyandSellStock;
 
 public class Solution {
 	public static int maxProfit(int[] prices) {

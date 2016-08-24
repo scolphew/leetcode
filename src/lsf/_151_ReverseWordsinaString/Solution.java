@@ -1,4 +1,4 @@
-package lsf._151_ReverseWordsinaString;
+ï»¿package lsf._151_ReverseWordsinaString;
 
 public class Solution {
 
@@ -19,7 +19,7 @@ public class Solution {
 		if(s.trim().isEmpty())
 			return s.trim();
 //		String[] string = s.trim().split(" ");
-		//ÕıÔò±í´ïÊ½
+		//æ­£åˆ™è¡¨è¾¾å¼
 		String[] string = s.trim().split("[ ]+");
 		
 //		for (int i = 0; i < string.length; i++) {

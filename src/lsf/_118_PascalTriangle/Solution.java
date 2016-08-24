@@ -1,4 +1,4 @@
-package lsf._118_PascalTriangle;
+ï»¿package lsf._118_PascalTriangle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ public class Solution {
 		System.out.println( s.generate(1) );
 	}
 	/**
-	 * Ñî»ÔÈı½Ç
+	 * æ¨è¾‰ä¸‰è§’
 	 * @param numRows
 	 * @return
 	 */
@@ -24,11 +24,11 @@ public class Solution {
 		List<Integer> thisList=new ArrayList<Integer>();
 		thisList.add(1);
 		returnList.add(thisList);
-		//´ÓµÚ¶şĞĞ¿ªÊ¼
+		//ä»ç¬¬äºŒè¡Œå¼€å§‹
 		for (int i = 2; i <=numRows; i++) {
 			thisList=new ArrayList<Integer>();
 			thisList.add(1);
-			//³ıÁË±¾ĞĞÊ×Î²
+			//é™¤äº†æœ¬è¡Œé¦–å°¾
 			for (int j = 1; j <i-1; j++) {
 				int a=returnList.get(i-2).get(j-1);
 				int b=returnList.get(i-2).get(j);

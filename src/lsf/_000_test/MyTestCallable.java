@@ -1,4 +1,4 @@
-package lsf._000_test;
+ï»¿package lsf._000_test;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -6,7 +6,7 @@ import java.util.concurrent.FutureTask;
 
 /**
  * @author scolphew
- * @create 2016Äê08ÔÂ08ÈÕ
+ * @create 2016å¹´08æœˆ08æ—¥
  */
 public class MyTestCallable implements Callable<String> {
 

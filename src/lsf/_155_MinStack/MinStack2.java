@@ -1,4 +1,4 @@
-package lsf._155_MinStack;
+ï»¿package lsf._155_MinStack;
 
 
 public class MinStack2 {
@@ -17,11 +17,11 @@ public class MinStack2 {
 			min=new ListMin(x);
 		}
 		else{
-			//¼ÓÈë½Úµã
+			//åŠ å…¥èŠ‚ç‚¹
 			ListNode p=list;
 			list =new ListNode(x);
 			list.next=p;
-			//¸ü¸Ä×îĞ¡Öµ
+			//æ›´æ”¹æœ€å°å€¼
 			if(x==min.val){
 				min.count++;
 			}else if (x<min.val) {
@@ -36,7 +36,7 @@ public class MinStack2 {
 		if(list!=null){
 			int x=list.val;
 			list=list.next;
-			//¸ü¸Ä×îĞ¡Öµ
+			//æ›´æ”¹æœ€å°å€¼
 			if( x==min.val ){
 				if(min.count==1){
 					min=min.next;

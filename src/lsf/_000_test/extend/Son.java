@@ -1,8 +1,8 @@
-package lsf._000_test.extend;
+ï»¿package lsf._000_test.extend;
 
 /**
  * @author scolphew
- * @create 2016Äê08ÔÂ08ÈÕ
+ * @create 2016å¹´08æœˆ08æ—¥
  */
 public class Son extends Father {
 

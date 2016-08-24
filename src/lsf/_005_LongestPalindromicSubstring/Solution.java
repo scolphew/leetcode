@@ -1,8 +1,8 @@
-package lsf._005_LongestPalindromicSubstring;
+ï»¿package lsf._005_LongestPalindromicSubstring;
 
 /**
  * @author scolphew
- * @create 2016Äê07ÔÂ07ÈÕ
+ * @create 2016å¹´07æœˆ07æ—¥
  */
 public class Solution {
     public String longestPalindrome(String s) {

@@ -1,4 +1,4 @@
-package lsf._119_PascalTriangleII;
+ï»¿package lsf._119_PascalTriangleII;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ public class Solution {
 	}
 
 	/**
-	 * Ñî»ÔÈı½Çµ¥¶ÀĞĞ
+	 * æ¨è¾‰ä¸‰è§’å•ç‹¬è¡Œ
 	 * 
 	 * @param rowIndex
 	 * @return

@@ -1,8 +1,8 @@
-package lsf._000_test.float1;
+ï»¿package lsf._000_test.float1;
 
 /**
  * @author scolphew
- * @create 2016Äê08ÔÂ08ÈÕ
+ * @create 2016å¹´08æœˆ08æ—¥
  */
 public class Test {
     public static void main(String[] args) {

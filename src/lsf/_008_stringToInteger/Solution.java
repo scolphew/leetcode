@@ -1,4 +1,4 @@
-package lsf._008_stringToInteger;
+ï»¿package lsf._008_stringToInteger;
 
 public class Solution {
 
@@ -32,7 +32,7 @@ public class Solution {
 			++i;
 //		str=str.trim();
 		
-		//Ö»ÅĞ¶ÏÏÂÒ»Î»·ûºÅ
+		//åªåˆ¤æ–­ä¸‹ä¸€ä½ç¬¦å·
 		if(i < str.length() && (str.charAt(i) == '-' || str.charAt(i) == '+')){
 			flag = str.charAt(i) == '+' ? 1 : -1;
             i++;
@@ -41,7 +41,7 @@ public class Solution {
 		for (; i < len; ++i) {
 			char c = str.charAt(i);
 			if (c >= '0' && c <= '9') {
-				//³¬ÖµÁË
+				//è¶…å€¼äº†
                 if (sum > Integer.MAX_VALUE / 10 || (sum == Integer.MAX_VALUE / 10 && c > '7')) {
                 	
 //                	System.out.println("sum="+sum);
