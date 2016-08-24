@@ -2,17 +2,17 @@ package test;
 
 /**
  * @author scolphew
- *         Æ½ÃæÉÏµã¹ØÓÚÖ±Ïß¶Ô³Æ
+ *         å¹³é¢ä¸Šç‚¹å…³äºç›´çº¿å¯¹ç§°
  */
 public class SymmetryPoint {
 
     /**
-     * ¸ø¶¨Æ½ÃæÉÏµÄn¸öµã£¬ÎÊÊÇ·ñ´æÔÚÒ»ÌõÆ½ĞĞÓÚyÖáµÄÖ±ÏßÊ¹µÃÕâĞ©µã¹ØÓÚÖ±Ïß¶Ô³Æ
+     * ç»™å®šå¹³é¢ä¸Šçš„nä¸ªç‚¹ï¼Œé—®æ˜¯å¦å­˜åœ¨ä¸€æ¡å¹³è¡Œäºyè½´çš„ç›´çº¿ä½¿å¾—è¿™äº›ç‚¹å…³äºç›´çº¿å¯¹ç§°
      *
-     * @param points ÊäÈëµã
+     * @param points è¾“å…¥ç‚¹
      */
     public void solution(int[][] points) {
-        // TODO: 2016/8/24
+        // TODO: 2016/8/24 åˆšæ‰
     }
 
     public static void main(String[] args) {
