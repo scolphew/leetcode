@@ -7,6 +7,7 @@ import java.util.Map;
  * @author scolphew
  * @create 2016年08月08日
  */
+@SuppressWarnings("WeakerAccess")
 public class MutableDemo {
     public static void main(String[] args) {
 

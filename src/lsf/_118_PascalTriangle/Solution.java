@@ -3,6 +3,7 @@ package lsf._118_PascalTriangle;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
 
 	/**

@@ -3,10 +3,12 @@ package lsf._012_IntegerToRoman;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public static void main(String[] args) {
 		Solution s = new Solution();
 		System.out.println(s.romanToInt("DCXXI"));
+		System.out.println(s.romanToInt("DCXI"));
 	}
 
 	public String intToRoman(int num) {

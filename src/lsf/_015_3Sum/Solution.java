@@ -1,14 +1,8 @@
 package lsf._015_3Sum;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-import lsf._000_base.Print;
-
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public List<List<Integer>> threeSum(int[] nums) {
 		//List<List<Integer>> list=new ArrayList<List<Integer>>();

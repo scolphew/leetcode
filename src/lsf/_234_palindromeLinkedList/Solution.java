@@ -2,6 +2,7 @@ package lsf._234_palindromeLinkedList;
 
 import lsf._000_base.ListNode;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**
@@ -11,7 +12,7 @@ public class Solution {
 		int[] i = {1,2,1 };
 
 		Solution s = new Solution();
-		ListNode head =s.scanf(i);//输入
+		ListNode head =ListNode.scanf(i);//输入
 		s.print(head);//输出
 		System.out.println(s.isPalindrome(head));
 
@@ -24,8 +25,8 @@ public class Solution {
 		boolean returnValue=false;
 		
 		ListNode p = head;
-		/**
-		 * 获得长度
+		/*
+		  获得长度
 		 */
 		while (p != null) {
 			p = p.next;
@@ -40,10 +41,7 @@ public class Solution {
 		
 			System.out.println("这里是偶数");
 			int m=1;
-			ListNode q=p.next,per=null;
-			
-			@SuppressWarnings("unused")
-			ListNode sco_text=null;
+			ListNode q=p.next,per;
 			
 			while (p != null && m<len/2) {              //花了        T(n)=n/2
 					per=p;    //逆序
@@ -70,18 +68,6 @@ public class Solution {
 
 	}
 
-	private ListNode scanf(int[] i) {
-		if(i.length==0)
-			return null;
-		ListNode head = new ListNode(i[0]);
-		ListNode per = head;
-		for (int j = 1; j < i.length; j++) {
-			ListNode x = new ListNode(i[j]);
-			per.next = x;
-			per = x;
-		}
-		return head;
-	}
 
 	private void print(ListNode head) {
 		ListNode per = head;

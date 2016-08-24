@@ -4,6 +4,7 @@ package lsf._006_ZigZagConversion;
  * @author scolphew
  * @create 2016年07月07日
  */
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
     public String convert(String s, int numRows) {
         if(numRows<2)

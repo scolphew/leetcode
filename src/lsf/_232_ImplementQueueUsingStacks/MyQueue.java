@@ -2,6 +2,7 @@ package lsf._232_ImplementQueueUsingStacks;
 
 import java.util.Stack;
 
+@SuppressWarnings("WeakerAccess")
 public class MyQueue {
 	boolean isInQueue =true;
 	Stack<Integer> stack=new Stack<Integer>();

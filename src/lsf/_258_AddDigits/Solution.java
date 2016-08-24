@@ -1,5 +1,6 @@
 package lsf._258_AddDigits;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**
@@ -7,8 +8,8 @@ public class Solution {
 	 */
 	public static void main(String[] args) {
 		Solution s=new Solution();
-		System.out.println( "1-"+s.addDigits( (int)1));
-		System.out.println("2-"+s.addDigits2( (int)1));
+		System.out.println( "1-"+s.addDigits(1));
+		System.out.println("2-"+s.addDigits2(1));
 		System.out.println(  (-1)%9  );
 	}
 

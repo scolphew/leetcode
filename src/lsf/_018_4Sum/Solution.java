@@ -1,13 +1,8 @@
 package lsf._018_4Sum;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-import lsf._000_base.Print;
-
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public List<List<Integer>> fourSum(int[] nums, int target) {
 		Set<List<Integer>> set = new HashSet<List<Integer>>(); // 还是用Set防止重复加入

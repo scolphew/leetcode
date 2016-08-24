@@ -3,6 +3,7 @@ package lsf._202_HappyNumber;
 import java.util.HashSet;
 import java.util.Set;
 
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
 
 	/**

@@ -5,6 +5,7 @@ import lsf._000_base.TreeNode;
 
 import java.util.*;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public List<Integer> postorderTraversal(TreeNode root) {
 		List<Integer> list = new ArrayList<Integer>();

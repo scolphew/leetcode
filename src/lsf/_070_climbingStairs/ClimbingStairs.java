@@ -1,6 +1,7 @@
 package lsf._070_climbingStairs;
 
-public class ClimbingStairs {
+@SuppressWarnings("WeakerAccess")
+class ClimbingStairs {
 	
 	public int fun(int n){
 		int a=2,b=1;
@@ -11,11 +12,16 @@ public class ClimbingStairs {
 			b=a-b;
 		}
 		return a;
+
+
+
 	}
 	
 	public static void main(String[] args) {
 		ClimbingStairs c=new ClimbingStairs();
 		System.out.println( c.fun( 6 ) );
+		System.out.println( c.fun( 5 ) );
 	}
 
 }
+

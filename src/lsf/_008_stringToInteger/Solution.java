@@ -1,5 +1,6 @@
 package lsf._008_stringToInteger;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**
@@ -9,6 +10,7 @@ public class Solution {
 		Solution s=new Solution();
 		
 		System.out.println( s.myAtoi("     --4rr") );
+		System.out.println( s.myAtoi("        --4rr") );
 	}
 
 	public int myAtoi(String str) {

@@ -3,6 +3,7 @@ package lsf._217_ContainsDuplicate;
 import java.util.HashSet;
 import java.util.Set;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public static void main(String[] args) {
 		int[] i={1,2,3};

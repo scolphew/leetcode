@@ -6,8 +6,8 @@ import java.util.concurrent.FutureTask;
 
 /**
  * @author scolphew
- * @create 2016年08月08日
  */
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class MyTestCallable implements Callable<String> {
 
     private int id;

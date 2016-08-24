@@ -1,10 +1,11 @@
 package lsf._111_MinimumDepthofBinaryTree;
 
+import lsf._000_base.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
-import lsf._000_base.TreeNode;
-
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	/**
 	 * 直接从求最大深度复制的代码，加了个叶子节点判返回

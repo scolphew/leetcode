@@ -2,6 +2,7 @@ package lsf._083_RemoveDuplicatesfromSortedList;
 
 import lsf._000_base.ListNode;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public static void main(String[] args) {
 		int i[]={1,1};

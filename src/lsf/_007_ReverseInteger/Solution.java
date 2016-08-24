@@ -1,5 +1,6 @@
 package lsf._007_ReverseInteger;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**
@@ -8,6 +9,7 @@ public class Solution {
 	public static void main(String[] args) {
 		Solution s = new Solution();
 		System.out.println(s.reverse(Integer.MIN_VALUE));
+		System.out.println(s.reverse(12121));
 	}
 	public int reverse(int x) {
 		int val=0,flag=1;

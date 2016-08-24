@@ -1,5 +1,6 @@
 package lsf._058_lengthofLastWord;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**
@@ -9,6 +10,7 @@ public class Solution {
 		// TODO Auto-generated method stub
 		Solution s=new Solution();
 		System.out.println( s.lengthOfLastWord("hhh sssa ")  );
+		System.out.println( s.lengthOfLastWord("hh sssa ")  );
 	}
 
 	/**

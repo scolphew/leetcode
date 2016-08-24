@@ -1,5 +1,6 @@
 package lsf._125_ValidPalindrome;
 
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
 
 	/**

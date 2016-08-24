@@ -4,6 +4,7 @@ package test;
  * @author scolphew
  * 平面上点关于直线对称
  */
+@SuppressWarnings("WeakerAccess")
 public class SymmetryPoint {
 
     /**

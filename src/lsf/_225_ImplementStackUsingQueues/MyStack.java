@@ -3,6 +3,7 @@ package lsf._225_ImplementStackUsingQueues;
 import java.util.LinkedList;
 import java.util.Queue;
 
+@SuppressWarnings("WeakerAccess")
 public class MyStack {
 	
 	public static void main(String[] args) {

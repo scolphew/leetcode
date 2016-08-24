@@ -1,5 +1,6 @@
 package lsf._200_numberOfIslands;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution2 {
 	public static void main(String[] args){
 		Solution2 s=new Solution2();
@@ -47,7 +48,7 @@ public class Solution2 {
 		
 		
 		if(i < 0 || grid.length <= i || j < 0 || grid[0].length <= j 
-		           || visited[i][j] == true 
+		           || visited[i][j]
 		           || grid[i][j] == '0')
 		            return false;
 		else{

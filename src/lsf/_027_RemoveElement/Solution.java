@@ -1,5 +1,6 @@
 package lsf._027_RemoveElement;
 
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
 
 	/**

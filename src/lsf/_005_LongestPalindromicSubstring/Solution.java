@@ -4,7 +4,9 @@ package lsf._005_LongestPalindromicSubstring;
  * @author scolphew
  * @create 2016年07月07日
  */
+@SuppressWarnings("WeakerAccess")
 public class Solution {
+    @SuppressWarnings("SameParameterValue")
     public String longestPalindrome(String s) {
         if(s.length()<1)
             return s;
@@ -36,5 +38,8 @@ public class Solution {
         System.out.println("---------------");
         String a= s.longestPalindrome("22");
         System.out.println(a);
+        Solution s2 =new Solution();
+        String a2= s2.longestPalindrome("44");
+        System.out.println(a2);
     }
 }

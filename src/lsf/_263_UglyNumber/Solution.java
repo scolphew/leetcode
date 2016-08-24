@@ -1,5 +1,6 @@
 package lsf._263_UglyNumber;
 
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
 
 	/**
@@ -30,8 +31,6 @@ public class Solution {
 			 num/=3;
 		 while(num%5==0 )
 			 num/=5;
-		 if(num==1)
-			 return true;
-		 return false;
+		return num == 1;
 	}
 }

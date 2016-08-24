@@ -4,7 +4,7 @@ package lsf._000_test.float1;
  * @author scolphew
  * @create 2016年08月08日
  */
-public class Test {
+class Test {
     public static void main(String[] args) {
         //Float f2 = Float.NaN;
         //float f = 0.1f/0.0f;

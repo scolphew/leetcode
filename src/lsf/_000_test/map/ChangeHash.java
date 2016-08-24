@@ -5,11 +5,10 @@ import java.util.Map;
 
 /**
  * @author scolphew
- * @create 2016年08月08日
  */
-public class ChangeHash {
+class ChangeHash {
     public static void main(String[] args) {
-        Map<Hash,String> map = new HashMap();
+        Map<Hash,String> map = new HashMap<>();
         Hash h1 = new Hash();
         Hash h2 = new Hash();
         //System.out.println(h1.hashCode());
@@ -84,14 +83,9 @@ class Hash {
         }
         if (!(obj instanceof Hash)) {
             return false;
+        }else {
+            Hash other = (Hash)obj;
+            return this.i == other.i && this.j == other.j;
         }
-        Hash other = (Hash) obj;
-        if (i != other.i) {
-            return false;
-        }
-        if (j != other.j) {
-            return false;
-        }
-        return true;
     }
 }

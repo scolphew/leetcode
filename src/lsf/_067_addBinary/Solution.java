@@ -2,6 +2,7 @@ package lsf._067_addBinary;
 
 import java.util.Random;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
     public String suijishu() {
@@ -21,31 +22,7 @@ public class Solution {
     public static void main(String[] args) {
         Solution s = new Solution();
         System.out.println(s.addBinary("11", "11"));
-//		
-//		String s1=s.阌熸枻鎷烽敓鏂ゆ嫹阌燂拷);
-//		String s2=s.阌熸枻鎷烽敓鏂ゆ嫹阌燂拷);
-//		System.out.println("a="+s1);
-//		System.out.println("b="+s2);
-//		int n=new Random().nextInt(9999999);
-//		System.out.println("阌熸枻鎷烽敓鏂ゆ嫹"+n+"阌熶粙锛?);
-//		
-//		
-//		Long time1= new Date().getTime();
-//		for (int i = 0; i < n; i++) {
-//			//System.out.println(s.addBinary(s1, s2));
-//			s.addBinary(s1, s2);
-//		}
-//		Long time2= new Date().getTime();
-//		System.out.println("+=阌熸枻鎷烽敓鏂ゆ嫹镞堕敓鏂ゆ嫹");
-//		System.out.println(time2-time1);
-//		Long time3= new Date().getTime();
-//		for (int i = 0; i < n; i++) {
-//			//System.out.println(s.addBinary(s1, s2));
-//			s.addBinary2(s1, s2);
-//		}
-//		Long time4= new Date().getTime();
-//		System.out.println("StringBuffer阌熸枻鎷烽敓鏂ゆ嫹镞堕敓鏂ゆ嫹");
-//		System.out.println(time4-time3);
+        System.out.println(s.addBinary("14", "14"));
     }
 
     /*
@@ -96,17 +73,10 @@ public class Solution {
         String str = "";
         flag = 0;
         //System.out.println(c.length);
-        /**
-         * 铡婚敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷峰墠阌熸枻鎷峰嫙阌熸枻鎷烽敓锟?
-         *
-         */
         while (flag < c.length && c[flag] == 0) {
             //System.out.println(c[flag]+" "+flag);
             flag++;
         }
-        /**
-         * 阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹str
-         */
         for (int i = flag; i < c.length; i++) {
             str += c[i];
         }
@@ -156,18 +126,11 @@ public class Solution {
         String str = "";
         flag = 0;
         //System.out.println(c.length);
-        /**
-         * 铡婚敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷峰墠阌熸枻鎷峰嫙阌熸枻鎷烽敓锟?
-         *
-         */
         while (flag < c.length && c[flag] == 0) {
             //System.out.println(c[flag]+" "+flag);
             flag++;
         }
-        /**
-         * 阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹str
-         */
-//		for (int i = flag; i < c.length; i++) {
+        //		for (int i = flag; i < c.length; i++) {
 //			str+=c[i];
 //		}
 //		return str;

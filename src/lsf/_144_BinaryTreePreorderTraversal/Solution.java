@@ -1,12 +1,13 @@
 package lsf._144_BinaryTreePreorderTraversal;
 
+import lsf._000_base.Print;
+import lsf._000_base.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import lsf._000_base.Print;
-import lsf._000_base.TreeNode;
-
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public List<Integer> preorderTraversal(TreeNode root) {
 		List<Integer> list=new ArrayList<Integer>();

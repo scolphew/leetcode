@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public List<Integer> inorderTraversal(TreeNode root) {
 		List<Integer> list = new ArrayList<Integer>();

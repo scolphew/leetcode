@@ -1,5 +1,6 @@
 package lsf._121_BestTimetoBuyandSellStock;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public static int maxProfit(int[] prices) {
 		int max=0,sum=0;

@@ -2,6 +2,7 @@ package lsf._141_LinkedListCycle;
 
 import lsf._000_base.ListNode;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**

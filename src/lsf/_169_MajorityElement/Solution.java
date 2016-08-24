@@ -2,6 +2,7 @@ package lsf._169_MajorityElement;
 
 import java.util.Arrays;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	public static void main(String[] args) {

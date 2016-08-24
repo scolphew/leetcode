@@ -1,5 +1,6 @@
 package lsf._075_sortColors;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**

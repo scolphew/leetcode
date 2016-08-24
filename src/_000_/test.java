@@ -3,7 +3,8 @@ package _000_;
 /**
  * @author scolphew
  */
-public class test {
+@SuppressWarnings("RedundantStringConstructorCall")
+class test {
     public static void main(String[] args) {
         String str1 = "Hello";
         String str2 = "Hello";
@@ -15,7 +16,7 @@ public class test {
         System.out.println(str2==str4);
     }
 
-    public static String f(){
+    private static String f(){
         System.out.println("123");
         return "Hello";
     }

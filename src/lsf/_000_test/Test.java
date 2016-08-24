@@ -4,7 +4,7 @@ package lsf._000_test;
  * @author scolphew
  * @create 2016年08月08日
  */
-public class Test {
+class Test {
     public static void main(String[] args) {
         int sum = 0;
         for (int i = 0; i <= 100; i++) {

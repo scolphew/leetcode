@@ -1,5 +1,6 @@
 package lsf._231_PowerofTwo;
 
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
 	public static void main(String[] args) {
 		System.out.println(isPowerOfTwo(4));
@@ -11,10 +12,7 @@ public class Solution {
 			n>>>=1;
 		}
 		System.out.println(n);
-		if(n==1)
-			return true;
-		else 
-			return false;
+		return n==1;
 	}
 	public static boolean isPowerOfTwo2(int n) {
 		if(n<=0)

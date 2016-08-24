@@ -1,6 +1,7 @@
 package lsf._155_MinStack;
 
 
+@SuppressWarnings("WeakerAccess")
 public class MinStack {
 
 	/**

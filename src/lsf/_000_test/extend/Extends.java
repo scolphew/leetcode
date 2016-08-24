@@ -4,7 +4,7 @@ package lsf._000_test.extend;
  * @author scolphew
  * @create 2016年08月08日
  */
-public class Extends {
+class Extends {
 
     public Extends(){
 

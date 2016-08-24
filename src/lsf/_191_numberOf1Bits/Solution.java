@@ -1,5 +1,6 @@
 package lsf._191_numberOf1Bits;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**
@@ -10,7 +11,6 @@ public class Solution {
 		System.out.println(s.hammingWeight2(-2147483648));
 		System.out.println(s.hammingWeight( -2147483648 ) );
 		
-		System.out.println( (int)2147483649l) ;
 	}
 	/*
 Write a function that takes an unsigned integer and returns the number of ’1' bits it has (also known as the Hamming weight).

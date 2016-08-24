@@ -3,8 +3,8 @@ package lsf._000_test;
 /**
  * @author scolphew
  */
-public class A{
-    public int f() {
+class A{
+    int f() {
         try{
             return 123;
         }catch (Exception e){
@@ -25,11 +25,6 @@ abstract class B extends A{
     public static int i;
     public int f(){
         return 123;
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
     }
 }
 

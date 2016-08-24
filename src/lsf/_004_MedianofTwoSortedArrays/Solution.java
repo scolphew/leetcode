@@ -1,5 +1,6 @@
 package lsf._004_MedianofTwoSortedArrays;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 
 	/**

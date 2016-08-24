@@ -1,5 +1,6 @@
 package lsf._151_ReverseWordsinaString;
 
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
 
 	/**

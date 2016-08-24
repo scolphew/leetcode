@@ -4,6 +4,7 @@ package lsf._009_PalindromeNumber;
  * @author scolphew
  * @create 2016年07月07日
  */
+@SuppressWarnings("WeakerAccess")
 public class Solution {
     public boolean isPalindrome(int x){
         if (x<0 || (x!=0 && x%10==0)) return false;//负数和末尾为0的 返回false
@@ -19,5 +20,6 @@ public class Solution {
     public static void main(String[] args) {
         Solution s=new Solution();
         System.out.println(s.isPalindrome(1));
+        System.out.println(s.isPalindrome(4));
     }
 }

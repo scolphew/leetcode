@@ -1,5 +1,6 @@
 package lsf._026_RemoveDuplicatesfromSortedArray;
 
+@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public static void main(String[] args) {
 		Solution s=new Solution();

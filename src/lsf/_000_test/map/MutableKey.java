@@ -2,8 +2,8 @@ package lsf._000_test.map;
 
 /**
  * @author scolphew
- * @create 2016年08月08日
  */
+@SuppressWarnings("ALL")
 public class MutableKey {
     private int i;
     private int j;
@@ -48,14 +48,9 @@ public class MutableKey {
         }
         if (!(obj instanceof MutableKey)) {
             return false;
+        }else {
+            MutableKey other = (MutableKey)obj;
+            return this.i == other.i && this.j == other.j;
         }
-        MutableKey other = (MutableKey) obj;
-        if (i != other.i) {
-            return false;
-        }
-        if (j != other.j) {
-            return false;
-        }
-        return true;
     }
 }

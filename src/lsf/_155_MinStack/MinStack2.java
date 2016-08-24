@@ -1,6 +1,7 @@
 package lsf._155_MinStack;
 
 
+@SuppressWarnings("ALL")
 public class MinStack2 {
 	
 	public static void main(String[] args) {
@@ -56,7 +57,7 @@ public class MinStack2 {
 	}
 }
 class ListMin{
-	int val;
+	final int val;
 	int count;
 	ListMin next;
 	public ListMin(int i) {
@@ -65,7 +66,7 @@ class ListMin{
 	}
 }
 class ListNode{
-	int val;
+	final int val;
 	ListNode next;
 	public ListNode(int i) {
 		val=i;

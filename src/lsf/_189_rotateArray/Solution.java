@@ -1,5 +1,6 @@
 package lsf._189_rotateArray;
 
+@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
 
 	/**
