@@ -16,6 +16,7 @@ public class test {
     }
 
     public static String f(){
+        System.out.println("123");
         return "Hello";
     }
 }
