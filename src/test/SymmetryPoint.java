@@ -13,10 +13,13 @@ public class SymmetryPoint {
      */
     public void solution(int[][] points) {
         // TODO: 2016/8/24
+        System.out.println(points.length);
     }
 
     public static void main(String[] args) {
         // TODO: 2016/8/24
+        SymmetryPoint symmetryPoint = new SymmetryPoint();
+        symmetryPoint.solution(new int[5][2]);
     }
 
 }
