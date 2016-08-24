@@ -1,4 +1,4 @@
-﻿package lsf._070_climbingStairs;
+package lsf._070_climbingStairs;
 
 public class Solution {
 	

@@ -1,4 +1,4 @@
-﻿package lsf._000_test.float1;
+package lsf._000_test.float1;
 
 /**
  * @author scolphew

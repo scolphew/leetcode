@@ -1,4 +1,4 @@
-﻿package lsf._000_base;
+package lsf._000_base;
 
 import java.util.List;
 

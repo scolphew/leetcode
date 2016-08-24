@@ -1,4 +1,4 @@
-﻿package lsf._263_UglyNumber;
+package lsf._263_UglyNumber;
 
 public class Solution {
 

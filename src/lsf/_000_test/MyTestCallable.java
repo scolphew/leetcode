@@ -1,4 +1,4 @@
-﻿package lsf._000_test;
+package lsf._000_test;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

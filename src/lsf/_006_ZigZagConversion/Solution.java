@@ -1,4 +1,4 @@
-﻿package lsf._006_ZigZagConversion;
+package lsf._006_ZigZagConversion;
 
 /**
  * @author scolphew

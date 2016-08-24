@@ -1,24 +1,17 @@
-﻿/**
- * 
- */
 package lsf._104_MaximumDepthOfBinaryTree;
+
+import lsf._000_base.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
-import lsf._000_base.TreeNode;
 
 
 
 /**
  * @author scolphew
- * 
  */
 public class Solution {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		
 		Solution s=new Solution();
@@ -33,11 +26,11 @@ public class Solution {
 		System.out.println(s.maxDepth(root));
 	}
 
-	public int maxDepth(TreeNode root) {
+	private int maxDepth(TreeNode root) {
 		if(root==null)
 			return 0;
 		int d=0;
-		Queue<TreeNode> queue=new LinkedList<TreeNode>();
+		Queue<TreeNode> queue= new LinkedList<>();
 		queue.add(root);
 		TreeNode tn;
 		int is=1,next=0;

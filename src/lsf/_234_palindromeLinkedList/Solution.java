@@ -1,4 +1,4 @@
-﻿package lsf._234_palindromeLinkedList;
+package lsf._234_palindromeLinkedList;
 
 import lsf._000_base.ListNode;
 

@@ -1,4 +1,4 @@
-﻿package lsf._018_4Sum;
+package lsf._018_4Sum;
 
 import java.util.ArrayList;
 import java.util.Date;

@@ -1,8 +1,7 @@
-﻿package _000_;
+package _000_;
 
 /**
  * @author scolphew
- * @create 2016年07月07日
  */
 public class test {
     public static void main(String[] args) {

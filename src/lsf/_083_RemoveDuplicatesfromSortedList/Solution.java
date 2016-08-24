@@ -1,4 +1,4 @@
-﻿package lsf._083_RemoveDuplicatesfromSortedList;
+package lsf._083_RemoveDuplicatesfromSortedList;
 
 import lsf._000_base.ListNode;
 

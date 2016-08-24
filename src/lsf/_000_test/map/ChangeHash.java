@@ -1,4 +1,4 @@
-﻿package lsf._000_test.map;
+package lsf._000_test.map;
 
 import java.util.HashMap;
 import java.util.Map;

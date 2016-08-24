@@ -1,4 +1,4 @@
-﻿package lsf._225_ImplementStackUsingQueues;
+package lsf._225_ImplementStackUsingQueues;
 
 import java.util.LinkedList;
 import java.util.Queue;

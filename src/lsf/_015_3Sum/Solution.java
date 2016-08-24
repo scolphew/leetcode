@@ -1,4 +1,4 @@
-﻿package lsf._015_3Sum;
+package lsf._015_3Sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

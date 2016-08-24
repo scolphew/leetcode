@@ -1,4 +1,4 @@
-﻿package lsf._200_numberOfIslands;
+package lsf._200_numberOfIslands;
 
 public class Solution2 {
 	public static void main(String[] args){

@@ -1,4 +1,4 @@
-﻿package lsf._009_PalindromeNumber;
+package lsf._009_PalindromeNumber;
 
 /**
  * @author scolphew

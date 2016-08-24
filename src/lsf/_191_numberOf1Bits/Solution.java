@@ -1,4 +1,4 @@
-﻿package lsf._191_numberOf1Bits;
+package lsf._191_numberOf1Bits;
 
 public class Solution {
 

@@ -1,4 +1,4 @@
-﻿package lsf._067_addBinary;
+package lsf._067_addBinary;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-﻿package lsf._012_IntegerToRoman;
+package lsf._012_IntegerToRoman;
 
 import java.util.HashMap;
 import java.util.Map;

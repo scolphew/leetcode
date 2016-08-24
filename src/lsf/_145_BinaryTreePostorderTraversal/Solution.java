@@ -1,4 +1,4 @@
-﻿package lsf._145_BinaryTreePostorderTraversal;
+package lsf._145_BinaryTreePostorderTraversal;
 
 import lsf._000_base.Print;
 import lsf._000_base.TreeNode;

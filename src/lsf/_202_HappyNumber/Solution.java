@@ -1,4 +1,4 @@
-﻿package lsf._202_HappyNumber;
+package lsf._202_HappyNumber;
 
 import java.util.HashSet;
 import java.util.Set;

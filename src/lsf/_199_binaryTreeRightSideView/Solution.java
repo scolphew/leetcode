@@ -1,4 +1,4 @@
-﻿package lsf._199_binaryTreeRightSideView;
+package lsf._199_binaryTreeRightSideView;
 import java.util.ArrayList;
 import java.util.List;
 

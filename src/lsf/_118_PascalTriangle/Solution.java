@@ -1,4 +1,4 @@
-﻿package lsf._118_PascalTriangle;
+package lsf._118_PascalTriangle;
 
 import java.util.ArrayList;
 import java.util.List;

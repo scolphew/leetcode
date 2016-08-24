@@ -1,4 +1,4 @@
-﻿package lsf._004_MedianofTwoSortedArrays;
+package lsf._004_MedianofTwoSortedArrays;
 
 public class Solution {
 

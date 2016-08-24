@@ -1,4 +1,4 @@
-﻿package lsf._237_DeleteNodeInaLinkedList;
+package lsf._237_DeleteNodeInaLinkedList;
 
 import lsf._000_base.ListNode;
 

@@ -1,4 +1,4 @@
-﻿package lsf._075_sortColors;
+package lsf._075_sortColors;
 
 public class Solution {
 

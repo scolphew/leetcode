@@ -1,4 +1,4 @@
-﻿package lsf._232_ImplementQueueUsingStacks;
+package lsf._232_ImplementQueueUsingStacks;
 
 import java.util.Stack;
 

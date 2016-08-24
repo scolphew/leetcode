@@ -1,4 +1,4 @@
-﻿package lsf._136_SingleNumbe;
+package lsf._136_SingleNumbe;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

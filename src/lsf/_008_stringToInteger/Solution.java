@@ -1,4 +1,4 @@
-﻿package lsf._008_stringToInteger;
+package lsf._008_stringToInteger;
 
 public class Solution {
 

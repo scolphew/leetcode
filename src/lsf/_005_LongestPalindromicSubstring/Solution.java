@@ -1,4 +1,4 @@
-﻿package lsf._005_LongestPalindromicSubstring;
+package lsf._005_LongestPalindromicSubstring;
 
 /**
  * @author scolphew

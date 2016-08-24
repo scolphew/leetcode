@@ -1,4 +1,4 @@
-﻿package lsf._151_ReverseWordsinaString;
+package lsf._151_ReverseWordsinaString;
 
 public class Solution {
 

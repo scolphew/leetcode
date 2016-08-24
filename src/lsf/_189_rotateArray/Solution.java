@@ -1,4 +1,4 @@
-﻿package lsf._189_rotateArray;
+package lsf._189_rotateArray;
 
 public class Solution {
 

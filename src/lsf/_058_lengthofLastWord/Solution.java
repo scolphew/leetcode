@@ -1,4 +1,4 @@
-﻿package lsf._058_lengthofLastWord;
+package lsf._058_lengthofLastWord;
 
 public class Solution {
 

@@ -1,4 +1,4 @@
-﻿package lsf._141_LinkedListCycle;
+package lsf._141_LinkedListCycle;
 
 import lsf._000_base.ListNode;
 

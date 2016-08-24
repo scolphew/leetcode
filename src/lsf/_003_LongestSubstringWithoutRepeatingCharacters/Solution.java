@@ -1,4 +1,4 @@
-﻿package lsf._003_LongestSubstringWithoutRepeatingCharacters;
+package lsf._003_LongestSubstringWithoutRepeatingCharacters;
 
 import java.util.Arrays;
 import java.util.HashMap;

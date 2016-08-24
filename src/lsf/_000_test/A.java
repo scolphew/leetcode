@@ -1,8 +1,7 @@
-﻿package lsf._000_test;
+package lsf._000_test;
 
 /**
  * @author scolphew
- * @create 2016年08月08日
  */
 public class A{
     public int f() {
@@ -19,11 +18,6 @@ public class A{
         A a = new A();
         int x=a.f();
         System.out.println(x);
-        long l =1;
-        String s = null;
-        switch (s){
-
-        }
     }
 }
 

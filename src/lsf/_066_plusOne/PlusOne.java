@@ -1,4 +1,4 @@
-﻿package lsf._066_plusOne;
+package lsf._066_plusOne;
 public class PlusOne {
 	 public int[] plusOne(int[] digits) {
 		 for (int i = digits.length-1; i >=0; --i) {

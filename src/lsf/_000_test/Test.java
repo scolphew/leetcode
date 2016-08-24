@@ -1,4 +1,4 @@
-﻿package lsf._000_test;
+package lsf._000_test;
 
 /**
  * @author scolphew
