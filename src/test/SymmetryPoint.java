@@ -12,11 +12,12 @@ public class SymmetryPoint {
      */
     public void solution(int[][] points){
         System.out.println(points.length);
+        System.out.println(123);
     }
 
     public static void main(String[] args) {
         // TODO: 2016/8/24
-        System.out.println(123);
+
     }
 
 }
