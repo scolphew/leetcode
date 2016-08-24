@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<question>
+	<name>数组排序</name>
+	<condition>使用最少的交换次数</condition>>
+</question>
+<question>
+	<name>链表问题</name>
+	<method>快慢指针</method>
+</question>
+<question>
+	<name>反向问题</name>
+	<tool>栈</tool>>
+</question>
+<question>
+	<name>五子棋</name>
+	<method>博弈树</method>>>
+</question>
+</root>
