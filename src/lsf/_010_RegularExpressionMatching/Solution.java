@@ -9,8 +9,6 @@ import org.junit.Test;
  */
 public class Solution {
 
-    // in test
-
     Solution s;
 
     public boolean isMatch(String s, String p) {
