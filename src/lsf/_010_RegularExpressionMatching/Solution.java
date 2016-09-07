@@ -36,6 +36,7 @@ public class Solution {
                 if (p_char == '.' || s_char == p_char)
                     flag[i][j] = flag[i - 1][j - 1];
 
+
                 else if (p_char == '*') {
                     if (flag[i-1][j-2] || flag[i - 1][j-1])
                         flag[i][j] = true;
