@@ -16,22 +16,30 @@ public class Solution {
     public int maxArea(int[] height) {
         if (height == null || height.length < 2)
             return 0;
-        int maxArea = 0;
+        //if (height.length == 2)
+        //    return Math.min(height[0], height[1]);
+        int maxArea = 0, area;
         int i = 0, j = height.length - 1;
-        while (i<j){
-            maxArea = Math.max(maxArea, (j - i) * Math.min(height[i], height[j]));
-            if(height[i] < height[j]){
-                i++;
-            }else {
-                j--;
+        while (i < j) {
+            int l_num = height[i];
+            int r_num = height[j];
+            if (l_num > r_num) {
+                area = (j - i) * r_num;
+                while (height[--j] <= r_num);
+            } else {
+                area = (j - i) * l_num;
+                while (height[++i] < l_num);
             }
+            if (area > maxArea)
+                maxArea = area;
         }
         return maxArea;
     }
 
     public static void main(String[] args) {
+
         Solution s = new Solution();
-        int area = s.maxArea(new int[]{2,1,3});
+        int area = s.maxArea(new int[]{1,1});
         System.out.println(area);
     }
 }
