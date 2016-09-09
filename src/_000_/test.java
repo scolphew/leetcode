@@ -6,6 +6,15 @@ package _000_;
 @SuppressWarnings("RedundantStringConstructorCall")
 class test {
     public static void main(String[] args) {
+
+        int[] i= {3,2,1,3};
+
+        int j=3;
+
+        i[--j]=3;
+
+
+
         String str1 = "Hello";
         String str2 = "Hello";
         String str3 = new String("Hello");
