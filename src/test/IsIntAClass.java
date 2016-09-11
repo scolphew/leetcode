@@ -6,8 +6,8 @@ package test;
  * @author scolphew
  */
 public class IsIntAClass {
-
     /**
+     * add on github
      * add on pc
      * @param args
      */
