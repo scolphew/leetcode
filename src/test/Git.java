@@ -5,4 +5,6 @@ package test;
  */
 public class Git {
     //git 暂存
+    //add
+    //add
 }
