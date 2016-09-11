@@ -16,6 +16,10 @@ public class SymmetryPoint {
         System.out.println(123);
     }
 
+    /**
+     * hahaha
+     * @param args
+     */
     public static void main(String[] args) {
         // TODO: 2016/8/24
 
