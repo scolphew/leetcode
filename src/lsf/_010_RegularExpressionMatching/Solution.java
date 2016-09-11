@@ -40,12 +40,6 @@ public class Solution {
                 }
             }
         }
-        for (boolean[] booleen : flag) {
-            for (boolean b : booleen) {
-                System.out.print(b+" ");
-            }
-            System.out.println();
-        }
         return flag[s_len][p_len];
     }
 
