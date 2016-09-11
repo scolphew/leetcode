@@ -1,6 +1,7 @@
 package test;
 
 /**
+ * add on b
  * @author scolphew
  */
 public class IsIntAClass {
