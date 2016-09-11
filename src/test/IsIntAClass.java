@@ -5,6 +5,7 @@ package test;
  */
 public class IsIntAClass {
     /**
+     * add on github
      * on PC
      * @param args
      */
