@@ -18,6 +18,7 @@ public class SymmetryPoint {
 
     /**
      * hahaha
+     * allalaalalalla
      * @param args
      */
     public static void main(String[] args) {
