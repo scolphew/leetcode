@@ -1,0 +1,46 @@
+package lsf._20_ValidParentheses;
+
+import java.util.Stack;
+
+/**
+ * @author scolphew
+ */
+public class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        char pop;
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '[' || c == '{') {
+                stack.push(c);
+                continue;
+            }
+            if (stack.isEmpty())
+                return false;
+            pop = stack.pop();
+            switch (pop) {
+                case '(':
+                    if (c == ')') {
+                        continue;
+                    }
+                    else
+                        return false;
+                case '[':
+                    if (c == ']')
+                        continue;
+                    else
+                        return false;
+                case '{':
+                    if (c == '}')
+                        continue;
+                    else
+                        return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.isValid("[{]}"));
+    }
+}
