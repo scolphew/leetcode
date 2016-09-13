@@ -3,9 +3,9 @@ package lsf._000_base;
 import java.util.List;
 
 public class Print {
-	public static void printList(List<Integer> list){
-		for (Integer integer : list) {
-			System.out.print(integer+" ");
+	public static void printList(List list){
+		for (Object o : list) {
+			System.out.print(o+" ");
 		}
 		System.out.println();
 	}
