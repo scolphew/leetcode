@@ -9,6 +9,13 @@ public class Print {
 		}
 		System.out.println();
 	}
+
+	public static void printlnList(List list){
+		for (Object o : list) {
+			System.out.println(o);
+		}
+		System.out.println();
+	}
 	
 	public static void print(int[] nums){
 		for (int i = 0; i < nums.length; i++) {
