@@ -32,5 +32,15 @@ public class ListNode {
 		}
 		System.out.println();
 	}
-	
+
+	@Override
+	public String toString() {
+		StringBuilder sb =new StringBuilder();
+		ListNode per = this;
+		while (per != null) {
+            sb.append(per.val+"   ");
+			per = per.next;
+		}
+		return sb.toString();
+	}
 }
