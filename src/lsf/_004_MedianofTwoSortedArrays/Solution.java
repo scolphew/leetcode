@@ -1,6 +1,8 @@
 package lsf._004_MedianofTwoSortedArrays;
 
-@SuppressWarnings("WeakerAccess")
+/**
+ * 返回两个排序的数组合并之后的中位数
+ */
 public class Solution {
 
 	/**
@@ -13,6 +15,10 @@ public class Solution {
 		System.out.println(s.findMedianSortedArrays(i,j));
 	}
 
+	/**
+	 * 返回numbers1从start1开始，numbers2从start2开始的合并数组第k大的数字
+	 * @return
+	 */
 	public double helper(int[] numbers1, int start1, int[] numbers2, int start2, int topK){
 		if(start1 > numbers1.length-1) return numbers2[start2+topK-1];
 		if(start2 > numbers2.length-1) return numbers1[start1+topK-1];

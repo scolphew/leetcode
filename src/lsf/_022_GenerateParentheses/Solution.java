@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 给数字n
+ * 给出所有可能的n个括号对
  * @author scolphew
  */
 public class Solution {
@@ -32,7 +34,7 @@ public class Solution {
                     generateParenthesis(list, n, left + 1, right);
                     sb.deleteCharAt(sb.length() - 1);
                 } else {
-                    if(left>right) {
+                    if (left > right) {
                         sb.append(')');
                         generateParenthesis(list, n, left, right + 1);
                         sb.deleteCharAt(sb.length() - 1);

@@ -3,6 +3,7 @@ package lsf._023_MergekSortedLists;
 import lsf._000_base.ListNode;
 
 /**
+ * 多链表合并
  * @author scolphew
  */
 public class Solution {

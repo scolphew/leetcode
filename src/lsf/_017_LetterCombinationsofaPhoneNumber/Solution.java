@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 电话键盘上几个数字可能出现的所有字符串组合
  * @author scolphew
  */
 public class Solution {
@@ -21,14 +22,14 @@ public class Solution {
     }
 
     public void letterCombinations(String digits, int len, List<String> list) {
-        if(len == digits.length()){
+        if (len == digits.length()) {
             list.add(sb.toString());
             return;
-        }else {
+        } else {
             for (int i = 0; i < keys[digits.charAt(len) - '0'].length(); i++) {
                 sb.append(keys[digits.charAt(len) - '0'].charAt(i));
-                letterCombinations(digits, len+1, list);
-                sb.deleteCharAt(sb.length()-1);
+                letterCombinations(digits, len + 1, list);
+                sb.deleteCharAt(sb.length() - 1);
             }
         }
     }

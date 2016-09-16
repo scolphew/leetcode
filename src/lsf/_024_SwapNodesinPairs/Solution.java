@@ -3,6 +3,8 @@ package lsf._024_SwapNodesinPairs;
 import lsf._000_base.ListNode;
 
 /**
+ * 把链表两个一组，交换顺序
+ * 123456 --> 214365
  * @author scolphew
  */
 public class Solution {
@@ -31,7 +33,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode node = ListNode.scanf(new int[]{1,2,3,4,5,6});
+        ListNode node = ListNode.scanf(new int[]{1, 2, 3, 4, 5, 6});
         Solution s = new Solution();
         ListNode listNode = s.swapPairs(node);
         ListNode.print(listNode);

@@ -1,10 +1,17 @@
 package lsf._006_ZigZagConversion;
 
 /**
+ * z字形输出
+ * 例：
+ *  P   A   H   N
+ *  A P L S I I G
+ *  Y   I   R
+ * 先竖直z字形
+ * 再水平输出
+ *
  * @author scolphew
  * @create 2016年07月07日
  */
-@SuppressWarnings({"SameParameterValue", "WeakerAccess"})
 public class Solution {
     public String convert(String s, int numRows) {
         if(numRows<2)

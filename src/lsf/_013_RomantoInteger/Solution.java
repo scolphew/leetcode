@@ -3,7 +3,9 @@ package lsf._013_RomantoInteger;
 import java.util.HashMap;
 import java.util.Map;
 
-@SuppressWarnings("WeakerAccess")
+/**
+ * 罗马数字转int
+ */
 public class Solution {
 	public static void main(String[] args) {
 		System.out.println(check());

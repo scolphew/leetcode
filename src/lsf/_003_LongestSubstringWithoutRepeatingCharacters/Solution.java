@@ -1,6 +1,12 @@
 package lsf._003_LongestSubstringWithoutRepeatingCharacters;
 
-@SuppressWarnings("WeakerAccess")
+/**
+ * 寻找最长的不带不重复字符的子串
+ * 例：
+ * 	"abcabcbb" --> "abc"
+ * 	"bbbbb" --> "b"
+ * 	"pwwkew" --> "wke"
+ */
 public class Solution {
 	public static void main(String[] args) {
 		Solution s=new Solution();

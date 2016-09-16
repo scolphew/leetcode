@@ -3,6 +3,7 @@ package lsf._019_RemoveNthNodeFromEndofList;
 import lsf._000_base.ListNode;
 
 /**
+ * 移除链表倒数第n个节点
  * @author scolphew
  */
 public class Solution {
@@ -48,7 +49,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        ListNode node = ListNode.scanf(new int[]{1,2,3});
+        ListNode node = ListNode.scanf(new int[]{1, 2, 3});
 
         ListNode.print(s.removeNthFromEnd2(node, 3));
     }
@@ -64,9 +65,9 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             p = p.next;
         }
-        if(p == null)
+        if (p == null)
             return head.next;
-        while (p.next != null){
+        while (p.next != null) {
             p = p.next;
             q = q.next;
         }

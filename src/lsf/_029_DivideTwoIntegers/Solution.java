@@ -1,6 +1,7 @@
 package lsf._029_DivideTwoIntegers;
 
 /**
+ * 实现除法
  * @author scolphew
  */
 public class Solution {

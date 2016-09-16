@@ -3,6 +3,7 @@ package lsf._025_ReverseNodesinkGroup;
 import lsf._000_base.ListNode;
 
 /**
+ * 把链表k个一组，交换顺序
  * @author scolphew
  */
 public class Solution {
@@ -19,7 +20,7 @@ public class Solution {
         ListNode next = p.next;
         boolean flag = false;//链表长度小于k
         for (int i = 1; i < k; i++) {
-            if(next==null) {
+            if (next == null) {
                 flag = true;
                 break;
             }
@@ -37,7 +38,7 @@ public class Solution {
             return result;
         } else {
             next = reverseKGroup(next, k);
-            head.next=next;
+            head.next = next;
             return result;
         }
 
@@ -47,25 +48,25 @@ public class Solution {
      * 反转链表
      */
     ListNode reverse(ListNode head) {
-        if(head==null || head.next==null)
+        if (head == null || head.next == null)
             return head;
         ListNode p = head;
         ListNode result = null;
         ListNode next = p.next;
 
-        while (next!=null){
-            result=next;
-            next=next.next;
-            result.next=p;
-            p=result;
+        while (next != null) {
+            result = next;
+            next = next.next;
+            result.next = p;
+            p = result;
         }
-        head.next=next;
+        head.next = next;
         return result;
     }
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        ListNode node = ListNode.scanf(new int[]{1,2,3,4,5});
+        ListNode node = ListNode.scanf(new int[]{1, 2, 3, 4, 5});
         //System.out.println(s.reverse(node));
         System.out.println(s.reverseKGroup(node, 9));
     }

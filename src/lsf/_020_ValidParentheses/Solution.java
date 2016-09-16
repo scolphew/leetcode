@@ -3,6 +3,7 @@ package lsf._020_ValidParentheses;
 import java.util.Stack;
 
 /**
+ * 判断由{}[]()组成的String是否是合法的括号对
  * @author scolphew
  */
 public class Solution {

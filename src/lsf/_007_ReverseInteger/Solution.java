@@ -1,22 +1,21 @@
 package lsf._007_ReverseInteger;
 
-@SuppressWarnings("WeakerAccess")
+/**
+ * int数字反转
+ */
 public class Solution {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		Solution s = new Solution();
 		System.out.println(s.reverse(Integer.MIN_VALUE));
-		System.out.println(s.reverse(12121));
+		System.out.println(s.reverse(12345));
 	}
 	public int reverse(int x) {
 		int val=0,flag=1;
 		if(x<0){
-			System.out.println(x);
+			//System.out.println(x);
 			x=-x;flag=-1;
-			System.out.println(x);
+			//System.out.println(x);
 		}
 		while( x>0 ){
 			

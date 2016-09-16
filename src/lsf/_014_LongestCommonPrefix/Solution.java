@@ -7,7 +7,6 @@ public class Solution {
 
     /**
      * 找到数组的最长公共字串
-     *
      * @param strs
      * @return
      */
@@ -20,6 +19,9 @@ public class Solution {
         return strs[0];
     }
 
+    /**
+     * 两个数组的公共字串
+     */
     public String commonPrefix(String s1, String s2){
         StringBuilder sb = new StringBuilder();
         for(int i=0,j=0;i<s1.length() && j<s2.length();++i,++j){

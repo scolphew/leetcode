@@ -1,10 +1,8 @@
 package lsf._011_ContainerWithMostWater;
 
 /**
- * Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai).
- * n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0).
- * Find two lines, which together with x-axis forms a container, such that the container contains the most water.
- *
+ * 给平行于y轴的n条线段的高度
+ * 求任意两个线段和x轴围成矩形的最大面积
  * @author scolphew
  */
 public class Solution {
