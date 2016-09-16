@@ -91,7 +91,7 @@ public class Solution {
 
     @Test
     public void t8() {
-        Assert.assertEquals(s.isMatch("aaa", "ab*a*c*a"), false);
+        Assert.assertEquals(s.isMatch("aaa", "ab*a*c*a"), true);
     }
 
     @Before
