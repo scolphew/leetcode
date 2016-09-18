@@ -7,28 +7,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-@SuppressWarnings("WeakerAccess")
 public class Solution {
 	public List<Integer> inorderTraversal(TreeNode root) {
-		List<Integer> list = new ArrayList<Integer>();
-		Stack<TreeNode> stack = new Stack<TreeNode>();
+		List<Integer> list = new ArrayList<>();
+		Stack<TreeNode> stack = new Stack<>();
 		TreeNode p = root;
-		while (p != null || !stack.isEmpty()) { // 阌熻鍖℃嫹阌熸枻鎷烽敓绐栴叏鎷烽敓锟?
-			while (p != null) { // 瀵婚敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熼摪镄勮妭纰夋嫹
+		while (p != null || !stack.isEmpty()) {
+			while (p != null) {
 				stack.push(p);
 				p = p.left;
 			}
-			if (!stack.isEmpty()) { // 阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷疯阌熸枻鎷烽敓鏂ゆ嫹鍓嶆爤阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓鏂ゆ嫹阌熼摪瑙掔殑鑺傜鎷?
+			if (!stack.isEmpty()) {
 				p = stack.pop();
-				list.add(p.val); // 阌熸枻鎷烽敓鏂ゆ嫹濯掕瘶镇栵拷阌熺煫鑺傜鎷烽敓楗哄够浼欐嫹阌熸枻鎷烽敓鏂ゆ嫹阌熸枻鎷烽敓锟?
-				p = p.right; // 阌熸枻鎷烽敓鏂ゆ嫹阌熸彮鐚存嫹阌熸枻鎷?
+				list.add(p.val);
+				p = p.right;
 			}
 		}
 		return list;
 	}
 	public List<Integer> inorderTraversal2(TreeNode root) {
-		List<Integer> list = new ArrayList<Integer>();
-		Stack<TreeNode> stack = new Stack<TreeNode>();
+		List<Integer> list = new ArrayList<>();
+		Stack<TreeNode> stack = new Stack<>();
 		TreeNode p = root;
 		while (p != null || !stack.isEmpty()) {
 			if (p != null) { 
