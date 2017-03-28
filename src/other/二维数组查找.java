@@ -1,4 +1,4 @@
-package lsf.other;
+package other;
 
 /**
  * @author scolphew
