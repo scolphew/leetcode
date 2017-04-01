@@ -1,6 +1,6 @@
 package lsf._107_BinaryTreeLevelOrderTraversalII;
 
-import lsf._000_base.TreeNode;
+import base.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

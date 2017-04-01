@@ -1,6 +1,6 @@
 package lsf._028_KMP;
 
-import lsf._000_base.Print;
+import base.Print;
 
 /**
  * @author scolphew

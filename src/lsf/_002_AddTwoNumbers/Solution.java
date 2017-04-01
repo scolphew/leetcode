@@ -1,6 +1,6 @@
 package lsf._002_AddTwoNumbers;
 
-import lsf._000_base.ListNode;
+import base.ListNode;
 
 /**
  * 两个数字链表相加

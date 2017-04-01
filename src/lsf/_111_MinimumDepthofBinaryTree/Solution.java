@@ -1,6 +1,6 @@
 package lsf._111_MinimumDepthofBinaryTree;
 
-import lsf._000_base.TreeNode;
+import base.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

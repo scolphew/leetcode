@@ -1,6 +1,6 @@
 package lsf._022_GenerateParentheses;
 
-import lsf._000_base.Print;
+import base.Print;
 
 import java.util.ArrayList;
 import java.util.List;

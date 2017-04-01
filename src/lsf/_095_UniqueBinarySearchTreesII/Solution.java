@@ -1,6 +1,6 @@
 package lsf._095_UniqueBinarySearchTreesII;
 
-import lsf._000_base.TreeNode;
+import base.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

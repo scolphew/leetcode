@@ -1,6 +1,6 @@
 package lsf._108_ConvertSortedArraytoBinarySearchTree;
 
-import lsf._000_base.TreeNode;
+import base.TreeNode;
 
 /**
  * @author scolphew

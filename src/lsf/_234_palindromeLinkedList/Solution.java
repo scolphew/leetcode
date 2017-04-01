@@ -1,6 +1,6 @@
 package lsf._234_palindromeLinkedList;
 
-import lsf._000_base.ListNode;
+import base.ListNode;
 
 @SuppressWarnings("WeakerAccess")
 public class Solution {

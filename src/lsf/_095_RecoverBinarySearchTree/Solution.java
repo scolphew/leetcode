@@ -1,6 +1,6 @@
 package lsf._095_RecoverBinarySearchTree;
 
-import lsf._000_base.TreeNode;
+import base.TreeNode;
 
 import java.util.Stack;
 

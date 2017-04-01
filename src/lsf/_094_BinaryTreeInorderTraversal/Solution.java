@@ -1,7 +1,7 @@
 package lsf._094_BinaryTreeInorderTraversal;
 
-import lsf._000_base.Print;
-import lsf._000_base.TreeNode;
+import base.Print;
+import base.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

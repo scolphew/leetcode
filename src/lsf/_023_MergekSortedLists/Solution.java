@@ -1,6 +1,6 @@
 package lsf._023_MergekSortedLists;
 
-import lsf._000_base.ListNode;
+import base.ListNode;
 
 /**
  * 多链表合并

@@ -1,6 +1,6 @@
 package lsf._141_LinkedListCycle;
 
-import lsf._000_base.ListNode;
+import base.ListNode;
 
 @SuppressWarnings("WeakerAccess")
 public class Solution {

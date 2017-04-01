@@ -1,4 +1,4 @@
-package lsf._000_base;
+package base;
 public class TreeNode {
     @SuppressWarnings("CanBeFinal")
     public int val;

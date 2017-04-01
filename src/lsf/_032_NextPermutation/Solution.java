@@ -1,6 +1,6 @@
 package lsf._032_NextPermutation;
 
-import lsf._000_base.Print;
+import base.Print;
 
 /**
  * 一个数字数组，组成一个序列

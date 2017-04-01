@@ -1,6 +1,6 @@
 package lsf._025_ReverseNodesinkGroup;
 
-import lsf._000_base.ListNode;
+import base.ListNode;
 
 /**
  * 把链表k个一组，交换顺序

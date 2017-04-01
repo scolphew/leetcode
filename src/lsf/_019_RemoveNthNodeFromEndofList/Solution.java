@@ -1,6 +1,6 @@
 package lsf._019_RemoveNthNodeFromEndofList;
 
-import lsf._000_base.ListNode;
+import base.ListNode;
 
 /**
  * 移除链表倒数第n个节点

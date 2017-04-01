@@ -1,6 +1,6 @@
 package lsf._021_MergeTwoSortedLists;
 
-import lsf._000_base.ListNode;
+import base.ListNode;
 
 /**
  * 双链表合并

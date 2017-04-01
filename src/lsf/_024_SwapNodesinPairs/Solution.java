@@ -1,6 +1,6 @@
 package lsf._024_SwapNodesinPairs;
 
-import lsf._000_base.ListNode;
+import base.ListNode;
 
 /**
  * 把链表两个一组，交换顺序
