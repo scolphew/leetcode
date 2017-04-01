@@ -23,4 +23,48 @@ public class Search {
         return search(nums, target, 0, nums.length - 1);
     }
 
+    public static int lower_bound(int[] nums, int key) {
+        return lower_bound(nums, key, 0, nums.length);
+    }
+
+    public static int lower_bound(int[] nums, int key, int first, int length) {
+        int half, mid;
+        while (length > 0) {
+            half = length >> 1;
+            mid = first + half;
+            if (nums[mid] < key) {
+                first = mid + 1;
+                length -= half + 1;
+            } else {
+                length = half;
+            }
+        }
+        return first;
+    }
+
+    public static int upper_bound(int[] nums, int key) {
+        return upper_bound(nums, key, 0, nums.length);
+    }
+
+    public static int upper_bound(int[] nums, int key, int first, int length) {
+        while (length > 0) {
+            int half = length >> 1;
+            int mid = first + half;
+            if (nums[mid] > key) {
+                length = half;
+            } else {
+                first = mid + 1;
+                length -= half + 1;
+            }
+        }
+        return first;
+    }
+
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{1, 1, 1, 2, 2, 2, 4, 4, 4};
+        System.out.println(lower_bound(nums, 4));
+        System.out.println(upper_bound(nums, 4));
+    }
+
 }
