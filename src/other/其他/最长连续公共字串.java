@@ -1,4 +1,4 @@
-package other;
+package other.其他;
 
 import java.util.Scanner;
 

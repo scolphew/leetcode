@@ -1,4 +1,4 @@
-package other;
+package other.练习;
 
 import java.util.Scanner;
 

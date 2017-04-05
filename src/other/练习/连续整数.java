@@ -1,4 +1,4 @@
-package other;
+package other.练习;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -7,6 +7,15 @@ import java.util.Scanner;
  * @author scolphew
  */
 public class 连续整数 {
+    /**
+     * 牛牛的好朋友羊羊在纸上写了n+1个整数，羊羊接着抹除掉了一个整数，
+     * 给牛牛猜他抹除掉的数字是什么。牛牛知道羊羊写的整数神排序之后是一串连续的正整数，
+     * 牛牛现在要猜出所有可能是抹除掉的整数。例如：
+     * 10 7 12 8 11 那么抹除掉的整数只可能是9
+     * 5 6 7 8 那么抹除掉的整数可能是4也可能是9
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();

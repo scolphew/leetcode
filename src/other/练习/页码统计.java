@@ -1,10 +1,15 @@
-package other;
+package other.练习;
 
 import java.util.Scanner;
 
 public class 页码统计 {
 
-
+    /**
+     * 牛牛新买了一本算法书，算法书一共有n页，页码从1到n。
+     * 牛牛于是想了一个算法题目：在这本算法书页码中0~9每个数字分别出现了多少次？
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();

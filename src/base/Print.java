@@ -16,6 +16,25 @@ public class Print {
 		}
 		System.out.println();
 	}
+
+	public static void print(int[][] nums){
+		for(int[] i:nums){
+			print(i);
+		}
+	}
+
+	public static void print(double[][] nums){
+		for(double[] i:nums){
+			print(i);
+		}
+	}
+
+	public static void print(double[] nums){
+		for (int i = 0; i < nums.length; i++) {
+			System.out.print(nums[i]+" ");
+		}
+		System.out.println();
+	}
 	
 	public static void print(int[] nums){
 		for (int i = 0; i < nums.length; i++) {
