@@ -61,10 +61,69 @@ public class Search {
     }
 
 
+    public static int KMP(String a, String pattern) {
+        int[] next = KMPNext(pattern);
+        int q = 0;
+        int p = 0;
+        while (p < a.length()) {
+            if (q == -1 || a.charAt(p) == pattern.charAt(q)) {
+                p++;
+                q++;
+            } else {
+                q = next[q];
+            }
+            if (q == pattern.length()) {
+                return p - q;
+            }
+        }
+        return -1;
+    }
+
+    public static int subCount(String a, String pattern) {
+        int res = 0;
+        int[] next = KMPNext(pattern);
+        int q = 0;
+        int p = 0;
+        while (p < a.length()) {
+            if (q == -1 || a.charAt(p) == pattern.charAt(q)) {
+                p++;
+                q++;
+            } else {
+                q = next[q];
+            }
+            if (q == pattern.length()) {
+                p--;
+                q = next[q - 1];
+                res += 1;
+            }
+        }
+        return res;
+    }
+
+    private static int[] KMPNext(String a) {
+        int l = a.length();
+        int next[] = new int[l];
+        int j = 0;
+        int k = -1;
+        next[0] = -1;
+        while (j < a.length() - 1) {
+            if (k == -1 || a.charAt(j) == a.charAt(k)) {
+                next[++j] = ++k;
+            } else {
+                k = next[k];
+            }
+        }
+        return next;
+
+    }
+
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 1, 1, 2, 2, 2, 4, 4, 4};
-        System.out.println(lower_bound(nums, 4));
-        System.out.println(upper_bound(nums, 4));
+        //int[] nums = new int[]{1, 1, 1, 2, 2, 2, 4, 4, 4};
+        //System.out.println(lower_bound(nums, 4));
+        //System.out.println(upper_bound(nums, 4));
+        Print.print(KMPNext("ababa"));
+        System.out.println(KMP("HAHAHA", "HAa"));
+        System.out.println(subCount("HAHAHA", "HA"));
     }
 
 }
