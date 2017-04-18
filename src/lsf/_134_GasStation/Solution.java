@@ -13,9 +13,9 @@ public class Solution {
             gas[i] -= cost[i];
         }
         int sum = 0;
-        for (int i = 0; i < 2 * gas.length - 1; i++) {
+        for (int i = 0; i < 2 * gas.length - 1; i++) { //保证每个加油站作为起点
             sum += gas[i % gas.length];
-            if (sum < 0) {
+            if (sum < 0) { //说明这个加油站耗油量大于存量，不能作为起点。
                 res = i + 1;
                 if (res >= gas.length)
                     return -1;
