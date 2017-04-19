@@ -28,7 +28,7 @@ public class ListNode {
     }
 
     public static void print(ListNode head) {
-        print(head, 1);
+        print(head, 10);
     }
 
     public static void print(ListNode head, int i) {

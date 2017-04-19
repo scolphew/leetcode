@@ -53,13 +53,45 @@ public class Solution {
         }
     }
 
+
+    public void reorderList2(ListNode head) {
+        if (head == null || head.next == null) return;
+        // 找中点
+        ListNode p1 = head, p2 = head;
+        while (p2.next != null && p2.next.next != null) {
+            p1 = p1.next;
+            p2 = p2.next.next;
+        }
+        //反转后半部分
+        ListNode pre = null, tmp;
+        p2 = p1.next;
+        while (p2 != null) {
+            tmp = p2.next;
+            p2.next = pre;
+            pre = p2;
+            p1.next = p2;
+            p2 = tmp;
+        }
+        //把后面的一半插入前面的一办
+        p2 = p1.next;
+        p1.next = null;
+        p1 = head;
+        while (p2 != null) {
+            tmp = p2.next;
+            p2.next = p1.next;
+            p1.next = p2;
+            p1 = p2.next;
+            p2 = tmp;
+        }
+    }
+
     public static void main(String[] args) {
         Solution s = new Solution();
         ListNode h = ListNode.scanf(new int[]{1, 2, 3, 4, 5, 6, 7});
-        s.reorderList(h);
+        s.reorderList2(h);
         ListNode.print(h, 10);
         h = ListNode.scanf(new int[]{1, 2, 3, 4, 5, 6, 7, 8});
-        s.reorderList(h);
+        s.reorderList2(h);
         ListNode.print(h, 10);
     }
 
