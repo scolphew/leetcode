@@ -27,6 +27,10 @@ public class ListNode {
         return head;
     }
 
+    public static void print(ListNode head) {
+        print(head, 1);
+    }
+
     public static void print(ListNode head, int i) {
         ListNode per = head;
         int index = 0;
