@@ -63,6 +63,21 @@ public class Solution {
         return index;
     }
 
+
+    public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) return null;
+
+        ListNode a = headA;
+        ListNode b = headB;
+
+        while (a != b) {
+            a = a == null ? headB : a.next;
+            b = b == null ? headA : b.next;
+        }
+
+        return a;
+    }
+
     public static void main(String[] args) {
         Solution s = new Solution();
         s.getIntersectionNode(ListNode.scanf(new int[]{1, 2, 3, 4, 5}), ListNode.scanf(new int[]{6, 7, 8, 9}));
