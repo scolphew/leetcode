@@ -1,5 +1,7 @@
 package lsf._149_MaxPointsonaLine;
 
+import base.Base;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -55,7 +57,7 @@ public class Solution {
                 if (y == 0)
                     x = 1;
                 if (x != 0 && y != 0) {
-                    int gcd = generateGCD(x, y);
+                    int gcd = Base.gcd2(x, y);
                     x /= gcd;
                     y /= gcd;
                 }
@@ -67,17 +69,6 @@ public class Solution {
         return result;
     }
 
-    private int generateGCD(int a, int b) {
-        if (b == 0) return a;
-        if (a == 0) return b;
-        while (b != 1) {
-            if (a % b == 0) return b;
-            int tmp = b;
-            b = a % b;
-            a = tmp;
-        }
-        return b;
-    }
 
     public static void main(String[] args) {
         Solution s = new Solution();
@@ -88,10 +79,6 @@ public class Solution {
         points[1] = new Point(1, 2);
         points[3] = new Point(2, 3);
         System.out.println(s.maxPoints(points));
-        System.out.println(s.generateGCD(1, 3));
-        System.out.println(s.generateGCD(3, 1));
-        //System.out.println(s.generateGCD(1, 7));
-        //System.out.println(s.generateGCD(12, 18));
 
 
     }
