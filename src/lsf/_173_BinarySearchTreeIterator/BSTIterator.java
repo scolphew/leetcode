@@ -6,42 +6,27 @@ import java.util.Stack;
 
 public class BSTIterator {
     Stack<TreeNode> stack;
-    TreeNode p;
-    TreeNode pre;
 
     public BSTIterator(TreeNode root) {
         stack = new Stack<>();
-        p = root;
-        pre = null;
-        while (p != null) {
-            stack.push(p);
-            p = p.left;
-        }
+        pushAll(root);
     }
 
-    /**
-     * @return whether we have a next smallest number
-     */
     public boolean hasNext() {
-        return !stack.isEmpty() || p != null;
+        return !stack.isEmpty();
     }
 
-    /**
-     * @return the next smallest number
-     */
     public int next() {
-        int res;
-        p = stack.pop();
-        res = p.val;
-        if (p.right != null) {
-            p = p.right;
-            while (p != null) {
-                stack.add(p);
-                p = p.left;
-            }
+        TreeNode p = stack.pop();
+        pushAll(p.right);
+        return p.val;
+    }
+
+    public void pushAll(TreeNode n) {
+        while (n != null) {
+            stack.add(n);
+            n = n.left;
         }
-        p = null;
-        return res;
     }
 
     public static void main(String[] args) {
