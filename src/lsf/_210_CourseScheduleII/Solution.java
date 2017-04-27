@@ -42,8 +42,54 @@ public class Solution {
         return res;
     }
 
+
+    int index = 0;
+
+    /**
+     * 深度优先
+     *
+     * @param numCourses
+     * @param prerequisites
+     * @return
+     */
+    public int[] findOrder2(int numCourses, int[][] prerequisites) {
+        List<Integer>[] graph = new List[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            graph[i] = new ArrayList<>();
+        }
+
+        for (int i = 0; i < prerequisites.length; i++) {
+            graph[prerequisites[i][1]].add(prerequisites[i][0]);
+        }
+
+        int[] flags = new int[numCourses];
+        int[] res = new int[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            if (dfs(graph, i, numCourses, flags, res))
+                return new int[0];
+        }
+        return res;
+    }
+
+    public boolean dfs(List<Integer>[] graph, int i, int n, int[] flags, int[] res) {
+        if (flags[i] == -1) {
+            return true;
+        }
+        if (flags[i] == 1)
+            return false;
+        flags[i] = -1;
+        for (int j : graph[i]) {
+            if (dfs(graph, j, n, flags, res)) {
+                return false;
+            }
+        }
+        flags[i] = 1;
+        res[n - index++ - 1] = i;
+        return false;
+    }
+
     public static void main(String[] args) {
-        new Solution().findOrder(4, new int[][]{
+        new Solution().findOrder2(4, new int[][]{
                 {1, 0},
                 {2, 0},
                 {3, 1},

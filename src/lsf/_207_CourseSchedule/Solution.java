@@ -11,7 +11,7 @@ public class Solution {
         }
 
         for (int i = 0; i < prerequisites.length; i++) {
-            graph[prerequisites[i][0]].add(prerequisites[i][1]);
+            graph[prerequisites[i][1]].add(prerequisites[i][0]);
         }
 
         int[] flags = new int[numCourses];
