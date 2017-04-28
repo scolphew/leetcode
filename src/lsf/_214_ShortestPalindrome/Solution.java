@@ -1,5 +1,7 @@
 package lsf._214_ShortestPalindrome;
 
+import base.Print;
+
 public class Solution {
     /**
      * 在字符串之前补充，使之成为回文串
@@ -35,10 +37,35 @@ public class Solution {
         return foo(chars, 0, chars.length - 1);
     }
 
+
+    public String shortestPalindrome2(String s) {
+        if (s.length() <= 1)
+            return s;
+        String newS = s + "#" + new StringBuilder(s).reverse().toString();
+        int[] position = getNext(newS.toCharArray());
+        Print.print(position);
+        return new StringBuilder(s.substring(position[position.length - 1])).reverse().toString() + s;
+    }
+
+    public int[] getNext(char[] s) {
+        int next[] = new int[s.length];
+        next[0] = 0;
+        for (int j = 1, i = 0; j < s.length; j++) {
+            while (i > 0 && s[i] != s[j]) {
+                i = next[i - 1];
+            }
+            if (s[i] == s[j]) {
+                i++;
+            }
+            next[j] = i;
+        }
+        return next;
+    }
+
+
     public static void main(String[] args) {
-        System.out.println(new Solution().shortestPalindrome("abc"));
-        System.out.println(new Solution().shortestPalindrome("a"));
-        System.out.println(new Solution().shortestPalindrome("ab"));
-        System.out.println(new Solution().shortestPalindrome(""));
+        System.out.println(new Solution().shortestPalindrome2("abad"));
+        System.out.println(new Solution().shortestPalindrome2("aaaaa"));
+
     }
 }
