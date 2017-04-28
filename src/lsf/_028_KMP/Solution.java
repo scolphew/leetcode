@@ -59,6 +59,8 @@ public class Solution {
         int[] j = s.getNext("abcdabd");
         Print.print(j);
 
+        new Solution().strStr("aabaaabaaac","aabaaac");
+
 
     }
 
