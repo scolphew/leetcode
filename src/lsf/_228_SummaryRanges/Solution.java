@@ -14,7 +14,7 @@ public class Solution {
             if (tmp == nums[i - 1])
                 ans.add(Integer.toString(tmp));
             else
-                ans.add(String.format("%d->%d", tmp, nums[i - 1]));
+                ans.add(tmp + "->" + nums[i - 1]);
         }
         return ans;
     }
