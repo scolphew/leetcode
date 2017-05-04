@@ -12,6 +12,12 @@ public class TreeNode {
         val = x;
     }
 
+    public TreeNode(int x, TreeNode a, TreeNode b) {
+        val = x;
+        left = a;
+        right = b;
+    }
+
     @Override
     public String toString() {
         return new Integer(val).toString();
