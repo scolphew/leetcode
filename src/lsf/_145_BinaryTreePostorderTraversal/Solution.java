@@ -7,6 +7,11 @@ import java.util.*;
 
 @SuppressWarnings("WeakerAccess")
 public class Solution {
+	/**
+	 * 后续遍历
+	 * @param root
+	 * @return
+	 */
 	public List<Integer> postorderTraversal(TreeNode root) {
 		List<Integer> list = new ArrayList<Integer>();
 		Map<TreeNode, Boolean> map=new HashMap<TreeNode, Boolean>();
