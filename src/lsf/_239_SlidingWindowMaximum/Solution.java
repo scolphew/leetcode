@@ -35,7 +35,7 @@ public class Solution {
         int index = 0;
         Deque<Integer> q = new ArrayDeque<>();//存最大的序号
         for (int i = 0; i < k; i++) {
-            while (!q.isEmpty() && q.peek() < i - k + 1)
+            if (!q.isEmpty() && q.peek() < i - k + 1)
                 q.poll();
             while (!q.isEmpty() && nums[q.peekLast()] < nums[i])
                 q.pollLast();
@@ -43,7 +43,7 @@ public class Solution {
         }
         ans[index++] = nums[q.peek()];
         for (int i = k; i < nums.length; i++) {
-            while (!q.isEmpty() && q.peek() < i - k + 1)
+            if (!q.isEmpty() && q.peek() < i - k + 1)
                 q.poll();
             while (!q.isEmpty() && nums[q.peekLast()] < nums[i])
                 q.pollLast();
