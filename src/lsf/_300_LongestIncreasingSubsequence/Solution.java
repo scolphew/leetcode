@@ -1,5 +1,6 @@
 package lsf._300_LongestIncreasingSubsequence;
 
+import java.util.Arrays;
 import java.util.TreeMap;
 
 public class Solution {
@@ -29,9 +30,25 @@ public class Solution {
         return ans;
     }
 
+
+    public int lengthOfLIS2(int[] nums) {
+        int[] dp = new int[nums.length];
+        int len = 0;
+
+        for (int x : nums) {
+            int i = Arrays.binarySearch(dp, 0, len, x);
+            if (i < 0) i = -(i + 1);
+            dp[i] = x;
+            if (i == len) len++;
+        }
+
+        return len;
+    }
+
+
     public static void main(String[] args) {
         Solution s = new Solution();
-        System.out.println(s.lengthOfLIS(new int[]{1, 2, 0, 5, 1, 2, 3, 4}));
+        System.out.println(s.lengthOfLIS2(new int[]{1, 2, 0, 5, 1, 2, 3, 4}));
         System.out.println(s.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18}));
         System.out.println(s.lengthOfLIS(new int[]{0}));
     }
