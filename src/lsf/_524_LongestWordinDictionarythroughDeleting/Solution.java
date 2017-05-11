@@ -11,6 +11,8 @@ public class Solution {
         Collections.sort(d, (a, b) -> a.length() != b.length() ? b.length() - a.length() : a.compareTo(b));
         chars = s.toCharArray();
         for (String string : d) {
+            if (s.length() < string.length())
+                continue;
             if (foo(string))
                 return string;
         }
@@ -26,6 +28,20 @@ public class Solution {
                 break;
         }
         return i == s.length();
+    }
+
+
+    private boolean foo2(String p) {
+        int i = 0, j = 0;
+        while (i < chars.length && j < p.length()) {
+            if (chars[i] == p.charAt(j)) {
+                i++;
+                j++;
+            } else {
+                i++;
+            }
+        }
+        return j == p.length();
     }
 
     public static void main(String[] args) {
