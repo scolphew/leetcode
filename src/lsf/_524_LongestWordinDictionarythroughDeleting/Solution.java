@@ -44,6 +44,17 @@ public class Solution {
         return j == p.length();
     }
 
+    private boolean foo3(String s, String d) {
+        int start = -1;
+        for (int i = 0; i < d.length(); i++) {
+            start = s.indexOf(d.charAt(i), start + 1);
+            if (start < 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         Solution s = new Solution();
         List<String> list = new ArrayList<>();
