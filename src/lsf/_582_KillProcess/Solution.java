@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Queue;
 
 public class Solution {
+    /**
+     * TLE
+     */
     public List<Integer> killProcess(List<Integer> pid, List<Integer> ppid, int kill) {
         List<Integer> ans = new ArrayList<>();
 
