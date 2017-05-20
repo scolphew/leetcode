@@ -27,22 +27,20 @@ public class Solution {
             }
         }
 
-        while (!q.isEmpty()) {
-            ans = new ArrayList<>();
+        while (n > 2) {
             int count = q.size();
-
+            n -= count;
             for (int i = 0; i < count; i++) {
                 int cur = q.poll();
-                ans.add(cur);
                 for (int k : graph[cur]) {
                     graph[k].remove(cur);
                     if (graph[k].size() == 1) {
                         q.offer(k);
                     }
                 }
-                //graph[cur].clear();
             }
         }
+        ans.addAll(q);
         return ans;
 
     }
