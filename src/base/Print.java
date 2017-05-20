@@ -18,9 +18,11 @@ public class Print {
     }
 
     public static void print(int[][] nums) {
+        System.out.println();
         for (int[] i : nums) {
             print(i);
         }
+        System.out.println();
     }
 
     public static void print(boolean[][] nums) {
