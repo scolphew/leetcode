@@ -27,6 +27,23 @@ public class Solution {
         return ans;
     }
 
+
+    public int foo(int[] nums, int n) {
+        long max = 0;
+        int res = 0;
+        for (int i = 0; max < n; ) {
+            if (i >= nums.length || max < nums[i] - 1) {
+                max += max + 1;
+                res++;
+            } else {
+                max += nums[i];
+                i++;
+            }
+        }
+        return res;
+
+    }
+
     public static void main(String[] args) {
         new Solution().minPatches(new int[]{3}, 6);
     }
