@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Solution {
+    /**
+     * TLE
+     */
     public List<List<Integer>> palindromePairs(String[] words) {
         List<List<Integer>> ans = new LinkedList<>();
         for (int i = 0; i < words.length; i++) {
