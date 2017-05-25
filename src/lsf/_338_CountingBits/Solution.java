@@ -15,6 +15,16 @@ public class Solution {
         return ans;
     }
 
+    public int[] countBits2(int num) {
+        //dynaminc programming and bit manipulation
+        int[] cnt = new int[num + 1];
+        for (int i = 0; i <= num; i++) {
+            cnt[i] = cnt[i / 2] + i % 2;
+        }
+        return cnt;
+    }
+
+
     public static void main(String[] args) {
         Print.print(new Solution().countBits(0));
         Print.print(new Solution().countBits(1));
