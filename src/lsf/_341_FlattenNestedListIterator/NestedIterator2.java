@@ -7,6 +7,7 @@ public class NestedIterator2 implements Iterator<Integer> {
 
     public NestedIterator2(List<NestedInteger> nestedList) {
         s = new ArrayDeque<>(nestedList);
+        s = new LinkedList<>(nestedList);
     }
 
     @Override
