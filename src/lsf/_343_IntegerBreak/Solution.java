@@ -13,6 +13,20 @@ public class Solution {
         return dp[n];
     }
 
+
+    public int integerBreak2(int n) {
+        if (n == 2) return 1;
+        if (n == 3) return 2;
+        int res = 1;
+        while (n > 4) {
+            res *= 3;
+            n -= 3;
+        }
+        res *= n;
+        return res;
+    }
+
+
     public static void main(String[] args) {
         System.out.println(new Solution().integerBreak(8));
     }
