@@ -22,6 +22,18 @@ public class Solution {
         return ans;
     }
 
+    public int foo(int[] A) {
+        int curr = 0, sum = 0;
+        for (int i = 2; i < A.length; i++)
+            if (A[i] - A[i - 1] == A[i - 1] - A[i - 2]) {
+                curr += 1;
+                sum += curr;
+            } else {
+                curr = 0;
+            }
+        return sum;
+    }
+
     public static void main(String[] args) {
         System.out.println(new Solution().numberOfArithmeticSlices(new int[]{
                 1, 3, 4, 6, 7, 8, 10, 11, 12, 13
