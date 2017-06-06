@@ -9,7 +9,7 @@ public class Solution {
             int countC = ++counts[c];
             if (countC > count) count = countC;
             while (i - srart + 1 - count > k) {
-                counts[c]--;
+                counts[s.charAt(srart) - 'A']--;
                 srart++;
             }
             max = Math.max(i - srart + 1, max);
@@ -19,6 +19,6 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        System.out.println(new Solution().characterReplacement("AAABB", 2));
+        System.out.println(new Solution().characterReplacement("AABABBA", 1));
     }
 }
