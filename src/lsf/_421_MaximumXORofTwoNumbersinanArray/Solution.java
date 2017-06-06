@@ -43,18 +43,16 @@ public class Solution {
             return 0;
         }
         Trie root = new Trie();
-        for (int num : nums) {
-            root.insert(num);
-        }
         int max = Integer.MIN_VALUE;
         for (int num : nums) {
+            root.insert(num);
             max = Math.max(root.fondMaxOr(num), max);
         }
         return max;
     }
 
     public static void main(String[] args) {
-        new Solution().findMaximumXOR(new int[]{0, 7});
+        System.out.println(new Solution().findMaximumXOR(new int[]{0, 7}));
     }
 
 }
