@@ -1,23 +1,17 @@
 package lsf._526_BeautifulArrangement;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class Solution {
     public int countArrangement(int N) {
         int[] nums = new int[N + 1];
+        boolean[] visited = new boolean[N + 1];
 
         int ans = 0;
-        Set<Integer> set = new HashSet<>();
-        for (int i = 1; i <= N; i++) {
-            set.add(i);
-        }
         int i = 1, j = 1;
         while (i > 0) {
             while (j <= N) {
-                if (set.contains(j) && (i % j == 0 || j % i == 0)) {  //如果给位置可以放
+                if (!visited[j] && (i % j == 0 || j % i == 0)) {  //如果给位置可以放
                     nums[i] = j;
-                    set.remove(j);
+                    visited[j] = true;
                     j = 1;
                     break;
                 } else {
@@ -31,7 +25,7 @@ public class Solution {
                 } else {
                     --i;
                     j = nums[i] + 1;
-                    set.add(nums[i]);
+                    visited[nums[i]] = false;
                     nums[i] = 0;
                     continue;
                 }
@@ -40,7 +34,7 @@ public class Solution {
             if (i == N) {
                 ans += 1;
                 j = nums[i] + 1;
-                set.add(nums[i]);
+                visited[nums[i]] = false;
                 nums[i] = 0;
                 continue;
             }
@@ -54,10 +48,6 @@ public class Solution {
         for (int i : a)
             s += i + "  ";
         return s;
-    }
-
-    private boolean canPlace(int i, int j, Set<Integer> set) {
-        return set.contains(j) && (i % j == 0 || j % i == 0);
     }
 
     public static void main(String[] args) {
