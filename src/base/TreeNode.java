@@ -25,14 +25,14 @@ public class TreeNode {
 
 
     public static List<Integer> preorderTraversal(TreeNode root) {
-        return new lsf._144_BinaryTreePreorderTraversal.Solution().preorderTraversal2(root);
+        return new lsf.java._144_BinaryTreePreorderTraversal.Solution().preorderTraversal2(root);
     }
 
     public static List<Integer> inorderTraversal(TreeNode root) {
-        return new lsf._094_BinaryTreeInorderTraversal.Solution().inorderTraversal2(root);
+        return new lsf.java._094_BinaryTreeInorderTraversal.Solution().inorderTraversal2(root);
     }
 
     public static List<Integer> postorderTraversal(TreeNode root) {
-        return new lsf._145_BinaryTreePostorderTraversal.Solution().postorderTraversal2(root);
+        return new lsf.java._145_BinaryTreePostorderTraversal.Solution().postorderTraversal2(root);
     }
 }
