@@ -1,4 +1,4 @@
-package lsf._518_CoinChange2;
+package lsf.java._518_CoinChange2;
 
 public class Solution {
     public int change(int amount, int[] coins) {

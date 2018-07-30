@@ -1,4 +1,4 @@
-package lsf._576_OutofBoundaryPaths;
+package lsf.java._576_OutofBoundaryPaths;
 
 import java.util.Arrays;
 

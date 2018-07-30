@@ -1,4 +1,4 @@
-package lsf._592_FractionAdditionandSubtraction;
+package lsf.java._592_FractionAdditionandSubtraction;
 
 public class Solution {
     public String fractionAddition(String expression) {
