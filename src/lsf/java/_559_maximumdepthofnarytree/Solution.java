@@ -1,19 +1,12 @@
 package lsf.java._559_maximumdepthofnarytree;
 
-import java.util.*;
+import base.Tree.Node;
 
-class Node {
-    public int val;
-    public List<Node> children;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
-    public Node() {
-    }
-
-    public Node(int _val, List<Node> _children) {
-        val = _val;
-        children = _children;
-    }
-}
 
 public class Solution {
     public int maxDepth(Node root) {

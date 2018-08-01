@@ -1,6 +1,6 @@
 package lsf.java._558_QuadTreeIntersection;
 
-import base.Node;
+import base.QuadTree.Node;
 
 public class Solution {
     public Node intersect(Node quadTree1, Node quadTree2) {

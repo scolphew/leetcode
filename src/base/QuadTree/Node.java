@@ -1,4 +1,4 @@
-package base;
+package base.QuadTree;
 
 public class Node {
     public boolean val;
