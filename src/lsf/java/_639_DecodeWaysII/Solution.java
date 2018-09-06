@@ -40,15 +40,20 @@ public class Solution {
                 if (chars[i - 1] == '1') {
                     // 前一个是1， 都可以组合一种
                     dp[i + 1] = (dp[i + 1] + dp[i - 1]) % M;
-                } else if (chars[i - 1] == '2' && chars[i - 1] <= '6') {
+                } else if (chars[i - 1] == '2' && chars[i] <= '6') {
                     // 前一个是2， 且当前小于6 ，都可以有一种
                     dp[i + 1] = (dp[i + 1] + dp[i - 1]) % M;
                 } else if (chars[i - 1] == '*') {
                     // 前一个是*， 当前位 小于6 两种，大于7，一种
-                    dp[i + 1] = (dp[i + 1] + (chars[i - 1] <= '6' ? 2 : 1) * dp[i - 1]) % M;
+                    dp[i + 1] = (dp[i + 1] + (chars[i] <= '6' ? 2 : 1) * dp[i - 1]) % M;
                 }
             }
         }
         return (int) dp[N];
+    }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.numDecodings("2839"));
     }
 }
