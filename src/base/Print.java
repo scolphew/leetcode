@@ -65,6 +65,13 @@ public class Print {
         System.out.println();
     }
 
+    public static void print(String[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + " ");
+        }
+        System.out.println();
+    }
+
     public static void print(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + " ");
