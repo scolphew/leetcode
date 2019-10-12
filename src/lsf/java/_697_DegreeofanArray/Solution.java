@@ -13,7 +13,7 @@ public class Solution {
             n.put(nums[i], n.getOrDefault(nums[i], 0) + 1);
             f.putIfAbsent(nums[i], i);
             e.put(nums[i], i);
-
+        }
         int a = Integer.MAX_VALUE, b = 0;
         for (Map.Entry<Integer, Integer> entry : n.entrySet()) {
             int x = entry.getValue();
