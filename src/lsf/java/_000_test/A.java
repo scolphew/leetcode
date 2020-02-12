@@ -6,7 +6,7 @@ package lsf.java._000_test;
 class A{
     int f() {
         try{
-            return 123;
+            return 12;
         }catch (Exception e){
             return 123;
         }finally {
