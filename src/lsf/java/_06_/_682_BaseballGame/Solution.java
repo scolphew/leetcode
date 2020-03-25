@@ -1,4 +1,4 @@
-package lsf.java._682_BaseballGame;
+package lsf.java._06_._682_BaseballGame;
 
 import java.util.Stack;
 
