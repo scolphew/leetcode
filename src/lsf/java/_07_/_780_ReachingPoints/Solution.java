@@ -1,6 +1,6 @@
-package lsf.java._07_;
+package lsf.java._07_._780_ReachingPoints;
 
-public class _780_ReachingPoints {
+public class Solution {
     public boolean reachingPoints(int sx, int sy, int tx, int ty) {
         while (tx >= sx && ty >= sy) {
             if (tx == ty) break;
