@@ -1,4 +1,4 @@
-package lsf.java._07_._0763_partitionlabels;
+package lsf.java._07_._763_partitionlabels;
 
 import java.util.ArrayList;
 import java.util.List;
